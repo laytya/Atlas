@@ -1,6 +1,6 @@
 --[[
 Name: AceDB-2.0
-Revision: $Rev: 14276 $
+Revision: $Rev: 17797 $
 Developed by: The Ace Development Team (http://www.wowace.com/index.php/The_Ace_Development_Team)
 Inspired By: Ace 1.x by Turan (turan@gryphon.com)
 Website: http://www.wowace.com/
@@ -12,14 +12,20 @@ Dependencies: AceLibrary, AceOO-2.0, AceEvent-2.0
 ]]
 
 local MAJOR_VERSION = "AceDB-2.0"
-local MINOR_VERSION = "$Revision: 14276 $"
+local MINOR_VERSION = "$Revision: 17797 $"
 
 if not AceLibrary then error(MAJOR_VERSION .. " requires AceLibrary") end
 if not AceLibrary:IsNewVersion(MAJOR_VERSION, MINOR_VERSION) then return end
 
+if loadstring("return function(...) return ... end") and AceLibrary:HasInstance(MAJOR_VERSION) then return end -- lua51 check
 if not AceLibrary:HasInstance("AceOO-2.0") then error(MAJOR_VERSION .. " requires AceOO-2.0") end
 
 local ACTIVE, ENABLED, STATE, TOGGLE_ACTIVE, MAP_ACTIVESUSPENDED, SET_PROFILE, SET_PROFILE_USAGE, PROFILE, PLAYER_OF_REALM, CHOOSE_PROFILE_DESC, CHOOSE_PROFILE_GUI, COPY_PROFILE_DESC, COPY_PROFILE_GUI, OTHER_PROFILE_DESC, OTHER_PROFILE_GUI, OTHER_PROFILE_USAGE, CHARACTER, REALM, CLASS
+
+local function safecall(func,a,b,c,d,e,f,g,h,i)
+	local success, err = pcall(func,a,b,c,d,e,f,g,h,i)
+	if not success then geterrorhandler()(err) end
+end
 
 if GetLocale() == "deDE" then
 	ACTIVE = "Aktiv"
@@ -84,6 +90,69 @@ elseif GetLocale() == "koKR" then
 	CHARACTER = "캐릭터: "
 	REALM = "서버: "
 	CLASS = "직업: "
+elseif GetLocale() == "zhTW" then
+	ACTIVE = "啟動"
+	ENABLED = "啟用"
+	STATE = "狀態"
+	TOGGLE_ACTIVE = "暫停/重啟這個插件。"
+	MAP_ACTIVESUSPENDED = { [true] = "|cff00ff00啟動|r", [false] = "|cffff0000已暫停|r" }
+	SET_PROFILE = "設定這插件的記錄檔。"
+	SET_PROFILE_USAGE = "{角色 || 聯業 || 伺服器 || <記錄檔名稱>}"
+	PROFILE = "記錄檔"
+	PLAYER_OF_REALM = "%s 於 %s"
+	CHOOSE_PROFILE_DESC = "選擇一個記錄檔"
+	CHOOSE_PROFILE_GUI = "選擇"
+	COPY_PROFILE_DESC = "由其他記錄檔複製設定。"
+	COPY_PROFILE_GUI = "複製由"
+	OTHER_PROFILE_DESC = "選擇其他記錄檔。"
+	OTHER_PROFILE_GUI = "其他"
+	OTHER_PROFILE_USAGE = "<記錄檔名稱>"
+
+	CHARACTER = "角色："
+	REALM = "伺服器："
+	CLASS = "聯業："
+elseif GetLocale() == "zhCN" then
+	ACTIVE = "\230\156\137\230\149\136"
+	ENABLED = "\229\144\175\231\148\168"
+	STATE = "\231\138\182\230\128\129"
+	TOGGLE_ACTIVE = "\230\154\130\229\129\156/\230\129\162\229\164\141 \230\173\164\230\143\146\228\187\182."
+	MAP_ACTIVESUSPENDED = { [true] = "|cff00ff00\230\156\137\230\149\136|r", [false] = "|cffff0000\230\154\130\229\129\156|r" }
+	SET_PROFILE = "\232\174\190\231\189\174\233\133\141\231\189\174\230\150\135\228\187\182\228\184\186\232\191\153\230\143\146\228\187\182."
+	SET_PROFILE_USAGE = "{\229\173\151\231\172\166 || \233\128\137\228\187\182\231\177\187 || \229\159\159 || <\233\133\141\231\189\174\230\150\135\228\187\182\229\144\141\229\173\151>}"
+	PROFILE = "\233\133\141\231\189\174\230\150\135\228\187\182"
+	PLAYER_OF_REALM = "%s \231\154\132 %s"
+	CHOOSE_PROFILE_DESC = "\233\128\137\230\139\169\233\133\141\231\189\174\230\150\135\228\187\182."
+	CHOOSE_PROFILE_GUI = "\233\128\137\230\139\169"
+	COPY_PROFILE_DESC = "\229\164\141\229\136\182\232\174\190\231\189\174\228\187\142\229\143\166\228\184\128\228\184\170\233\133\141\231\189\174\230\150\135\228\187\182."
+	COPY_PROFILE_GUI = "\229\164\141\229\136\182\228\187\142"
+	OTHER_PROFILE_DESC = "\233\128\137\230\139\169\229\143\166\228\184\128\228\184\170\233\133\141\231\189\174\230\150\135\228\187\182."
+	OTHER_PROFILE_GUI = "\229\133\182\228\187\150"
+	OTHER_PROFILE_USAGE = "<\233\133\141\231\189\174\230\150\135\228\187\182\229\144\141\229\173\151>"
+
+	CHARACTER = "\229\173\151\231\172\166: "
+	REALM = "\229\159\159: "
+	CLASS = "\233\128\137\228\187\182\231\177\187: "
+elseif GetLocale() == "ruRU" then
+	ACTIVE = "Активный"
+	ENABLED = "Включён"
+	STATE = "Состояние"
+	TOGGLE_ACTIVE = "Отключить/Запустить аддон."
+	MAP_ACTIVESUSPENDED = { [true] = "|cff00ff00Активный|r", [false] = "|cffff0000Приостановленный|r" }
+	SET_PROFILE = "Установить профиль для этого аддона."
+	SET_PROFILE_USAGE = "{чар || класс || сервер || <название профиля>}"
+	PROFILE = "Профиль"
+	PLAYER_OF_REALM = "%s из %s"
+	CHOOSE_PROFILE_DESC = "Выберите профиль."
+	CHOOSE_PROFILE_GUI = "Выбор"
+	COPY_PROFILE_DESC = "Cкопировать настройки из другого профиля."
+	COPY_PROFILE_GUI = "Скопировать из"
+	OTHER_PROFILE_DESC = "Выбрать другой профиль."
+	OTHER_PROFILE_GUI = "Другое"
+	OTHER_PROFILE_USAGE = "<название профиля>"
+
+	CHARACTER = "Персонаж: "
+	REALM = "Сервер: "
+	CLASS = "Класс: "
 else -- enUS
 	ACTIVE = "Active"
 	ENABLED = "Enabled"
@@ -215,7 +284,7 @@ do
 			return {}
 		end
 	end
-	
+
 	function del(t)
 		setmetatable(t, nil)
 		for k in pairs(t) do
@@ -559,19 +628,19 @@ end }
 
 function AceDB:InitializeDB(addonName)
 	local db = self.db
-	
+
 	if not db then
 		if addonName then
 			AceDB.addonsLoaded[addonName] = true
 		end
 		return
 	end
-	
+
 	if db.raw then
 		-- someone manually initialized
 		return
 	end
-	
+
 	if type(_G[db.name]) ~= "table" then
 		_G[db.name] = {}
 	else
@@ -929,52 +998,66 @@ function AceDB:SetProfile(name, copyFrom)
 	if string.lower(oldName) == string.lower(name) then
 		return
 	end
+	local oldProfileData = db.profile
+	local realName = name
+	if lowerName == "char" then
+		realName = name .. "/" .. charID
+	elseif lowerName == "realm" then
+		realName = name .. "/" .. realmID
+	elseif lowerName == "class" then
+		realName = name .. "/" .. classID
+	end
 	local current = self.class
 	while current and current ~= AceOO.Class do
 		if current.mixins then
 			for mixin in pairs(current.mixins) do
 				if type(mixin.OnEmbedProfileDisable) == "function" then
-					mixin:OnEmbedProfileDisable(self)
+					safecall(mixin.OnEmbedProfileDisable, mixin, self, realName)
 				end
 			end
 		end
 		current = current.super
 	end
 	if type(self.OnProfileDisable) == "function" then
-		self:OnProfileDisable()
-	end
-	local oldProfileData = db.profile
-	local realName = name
-	if lowerName == "char" then
-		realName = name .. "/" .. charID
-	elseif lowerName == "realm/" then
-		realName = name .. "/" .. realmID
-	elseif lowerName == "class/" then
-		realName = name .. "/" .. classID
+		safecall(self.OnProfileDisable, self, realName)
 	end
 	local active = self:IsActive()
 	db.raw.currentProfile[charID] = name
 	rawset(db, 'profile', nil)
+	if db.namespaces then
+		for k,v in pairs(db.namespaces) do
+			rawset(v, 'profile', nil)
+		end
+	end
 	if copyFrom then
 		for k,v in pairs(db.profile) do
 			db.profile[k] = nil
 		end
 		copyTable(db.profile, db.raw.profiles[copyFrom])
 		inheritDefaults(db.profile, db.defaults and db.defaults.profile)
+		if db.namespaces then
+			for l,u in pairs(db.namespaces) do
+				for k,v in pairs(u.profile) do
+					u.profile[k] = nil
+				end
+				copyTable(u.profile, db.raw.namespaces[l].profiles[copyFrom])
+				inheritDefaults(u.profile, u.defaults and u.defaults.profile)
+			end
+		end
 	end
 	local current = self.class
 	while current and current ~= AceOO.Class do
 		if current.mixins then
 			for mixin in pairs(current.mixins) do
 				if type(mixin.OnEmbedProfileEnable) == "function" then
-					mixin:OnEmbedProfileEnable(self, oldName, oldProfileData, copyFrom)
+					safecall(mixin.OnEmbedProfileEnable, mixin, self, oldName, oldProfileData, copyFrom)
 				end
 			end
 		end
 		current = current.super
 	end
 	if type(self.OnProfileEnable) == "function" then
-		self:OnProfileEnable(oldName, oldProfileData, copyFrom)
+		safecall(self.OnProfileEnable, self, oldName, oldProfileData, copyFrom)
 	end
 	if cleanDefaults(oldProfileData, db.defaults and db.defaults.profile) then
 		db.raw.profiles[oldName] = nil
@@ -996,14 +1079,17 @@ function AceDB:SetProfile(name, copyFrom)
 				if current.mixins then
 					for mixin in pairs(current.mixins) do
 						if type(mixin.OnEmbedEnable) == "function" then
-							mixin:OnEmbedEnable(self)
+							safecall(mixin.OnEmbedEnable, mixin, self)
 						end
 					end
 				end
 				current = current.super
 			end
 			if type(self.OnEnable) == "function" then
-				self:OnEnable()
+				safecall(self.OnEnable, self)
+			end
+			if AceEvent then
+				AceEvent:TriggerEvent("Ace2_AddonEnabled", self)
 			end
 		else
 			local current = self.class
@@ -1011,14 +1097,17 @@ function AceDB:SetProfile(name, copyFrom)
 				if current.mixins then
 					for mixin in pairs(current.mixins) do
 						if type(mixin.OnEmbedDisable) == "function" then
-							mixin:OnEmbedDisable(self)
+							safecall(mixin.OnEmbedDisable, mixin, self)
 						end
 					end
 				end
 				current = current.super
 			end
 			if type(self.OnDisable) == "function" then
-				self:OnDisable()
+				safecall(self.OnDisable, self)
+			end
+			if AceEvent then
+				AceEvent:TriggerEvent("Ace2_AddonDisabled", self)
 			end
 		end
 	end
@@ -1072,14 +1161,17 @@ function AceDB:ToggleActive(state)
 			if current.mixins then
 				for mixin in pairs(current.mixins) do
 					if type(mixin.OnEmbedEnable) == "function" then
-						mixin:OnEmbedEnable(self)
+						safecall(mixin.OnEmbedEnable, mixin, self)
 					end
 				end
 			end
 			current = current.super
 		end
 		if type(self.OnEnable) == "function" then
-			self:OnEnable()
+			safecall(self.OnEnable, self)
+		end
+		if AceEvent then
+			AceEvent:TriggerEvent("Ace2_AddonEnabled", self)
 		end
 	else
 		local current = self.class
@@ -1087,14 +1179,17 @@ function AceDB:ToggleActive(state)
 			if current.mixins then
 				for mixin in pairs(current.mixins) do
 					if type(mixin.OnEmbedDisable) == "function" then
-						mixin:OnEmbedDisable(self)
+						safecall(mixin.OnEmbedDisable, mixin, self)
 					end
 				end
 			end
 			current = current.super
 		end
 		if type(self.OnDisable) == "function" then
-			self:OnDisable()
+			safecall(self.OnDisable, self)
+		end
+		if AceEvent then
+			AceEvent:TriggerEvent("Ace2_AddonDisabled", self)
 		end
 	end
 	return not disable
@@ -1265,7 +1360,6 @@ function AceDB:AcquireDBNamespace(name)
 	return db.namespaces[name]
 end
 
-local options
 function AceDB:GetAceOptionsDataTable(target)
 	if not target['acedb-profile-list'] then
 		target['acedb-profile-list'] = setmetatable({}, caseInsensitive_mt)
@@ -1293,7 +1387,7 @@ function AceDB:GetAceOptionsDataTable(target)
 		if target.db and target.db.raw then
 			local t = target['acedb-profile-copylist']
 			local db = target.db
-			
+
 			if db.raw.profiles then
 				for k in pairs(db.raw.profiles) do
 					if string.find(k, '^char/') then
@@ -1316,69 +1410,66 @@ function AceDB:GetAceOptionsDataTable(target)
 			end
 		end
 	end
-	if not options then
-		options = {
-			standby = {
-				cmdName = STATE,
-				guiName = ENABLED,
-				name = ACTIVE,
-				desc = TOGGLE_ACTIVE,
-				type = "toggle",
-				get = "IsActive",
-				set = "ToggleActive",
-				map = MAP_ACTIVESUSPENDED,
-				order = -3,
-			},
-			profile = {
-				type = 'group',
-				name = PROFILE,
-				desc = SET_PROFILE,
-				order = -3.5,
-				get = "GetProfile",
-				args = {
-					choose = {
-						guiName = CHOOSE_PROFILE_GUI,
-						cmdName = PROFILE,
-						desc = CHOOSE_PROFILE_DESC,
-						type = 'text',
-						get = "GetProfile",
-						set = "SetProfile",
-						validate = target['acedb-profile-list']
-					},
-					copy = {
-						guiName = COPY_PROFILE_GUI,
-						cmdName = PROFILE,
-						desc = COPY_PROFILE_DESC,
-						type = 'text',
-						get = "GetProfile",
-						set = "SetProfile",
-						validate = target['acedb-profile-copylist'],
-						disabled = function()
-							return not next(target['acedb-profile-copylist'])
-						end,
-					},
-					other = {
-						guiName = OTHER_PROFILE_GUI,
-						cmdName = PROFILE,
-						desc = OTHER_PROFILE_DESC,
-						usage = OTHER_PROFILE_USAGE,
-						type = 'text',
-						get = "GetProfile",
-						set = "SetProfile",
-					}
+	return {
+		standby = {
+			cmdName = STATE,
+			guiName = ENABLED,
+			name = ACTIVE,
+			desc = TOGGLE_ACTIVE,
+			type = "toggle",
+			get = "IsActive",
+			set = "ToggleActive",
+			map = MAP_ACTIVESUSPENDED,
+			order = -3,
+		},
+		profile = {
+			type = 'group',
+			name = PROFILE,
+			desc = SET_PROFILE,
+			order = -3.5,
+			get = "GetProfile",
+			args = {
+				choose = {
+					guiName = CHOOSE_PROFILE_GUI,
+					cmdName = PROFILE,
+					desc = CHOOSE_PROFILE_DESC,
+					type = 'text',
+					get = "GetProfile",
+					set = "SetProfile",
+					validate = target['acedb-profile-list']
+				},
+				copy = {
+					guiName = COPY_PROFILE_GUI,
+					cmdName = PROFILE,
+					desc = COPY_PROFILE_DESC,
+					type = 'text',
+					get = "GetProfile",
+					set = "SetProfile",
+					validate = target['acedb-profile-copylist'],
+					disabled = function()
+						return not next(target['acedb-profile-copylist'])
+					end,
+				},
+				other = {
+					guiName = OTHER_PROFILE_GUI,
+					cmdName = PROFILE,
+					desc = OTHER_PROFILE_DESC,
+					usage = OTHER_PROFILE_USAGE,
+					type = 'text',
+					get = "GetProfile",
+					set = "SetProfile",
 				}
-			},
-		}
-	end
-	return options
+			}
+		},
+	}
 end
 
 local function activate(self, oldLib, oldDeactivate)
 	AceDB = self
 	AceEvent = AceLibrary:HasInstance("AceEvent-2.0") and AceLibrary("AceEvent-2.0")
-	
+
 	self.super.activate(self, oldLib, oldDeactivate)
-	
+
 	for t in pairs(self.embedList) do
 		if t.db then
 			rawset(t.db, 'char', nil)
@@ -1389,7 +1480,7 @@ local function activate(self, oldLib, oldDeactivate)
 			setmetatable(t.db, db_mt)
 		end
 	end
-	
+
 	if oldLib then
 		self.addonsToBeInitialized = oldLib.addonsToBeInitialized
 		self.addonsLoaded = oldLib.addonsLoaded
@@ -1404,7 +1495,7 @@ local function activate(self, oldLib, oldDeactivate)
 	if not self.registry then
 		self.registry = {}
 	end
-	
+
 	if oldLib then
 		oldDeactivate(oldLib)
 	end
@@ -1413,9 +1504,9 @@ end
 local function external(self, major, instance)
 	if major == "AceEvent-2.0" then
 		AceEvent = instance
-		
+
 		AceEvent:embed(self)
-		
+
 		self:RegisterEvent("ADDON_LOADED")
 		self:RegisterEvent("PLAYER_LOGOUT")
 	elseif major == "Dewdrop-2.0" then
