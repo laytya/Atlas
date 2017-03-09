@@ -1421,7 +1421,7 @@
 						getglobal(this:GetName().."Text"):SetText(AL["Lootlink Tooltips"]);
 					</OnLoad>
 					<OnClick>
-						AtlasLootOptions_DefaultTTToggle();
+						AtlasLootOptions_LootlinkTTToggle();
 					</OnClick>
 				</Scripts>
 			</CheckButton>
@@ -1439,7 +1439,7 @@
 						getglobal(this:GetName().."Text"):SetText(AL["ItemSync Tooltips"]);
 					</OnLoad>
 					<OnClick>
-						AtlasLootOptions_DefaultTTToggle();
+						AtlasLootOptions_ItemSyncTTToggle();
 					</OnClick>
 				</Scripts>
 			</CheckButton>

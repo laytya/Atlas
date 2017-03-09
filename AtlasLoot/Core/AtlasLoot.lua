@@ -69,7 +69,7 @@ local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 --Establish version number and compatible version of Atlas
 local VERSION_MAJOR = "4";
 local VERSION_MINOR = "06";
-local VERSION_BOSSES = "05";
+local VERSION_BOSSES = "07";
 ATLASLOOT_VERSION = "|cffFF8400AtlasLoot Enhanced v"..VERSION_MAJOR.."."..VERSION_MINOR.."."..VERSION_BOSSES.."|r";
 ATLASLOOT_CURRENT_ATLAS = "1.12.0";
 ATLASLOOT_PREVIEW_ATLAS = "1.12.1";
@@ -305,7 +305,7 @@ function AtlasLoot_OnVariablesLoaded()
 		AtlasLootCharDB.LootlinkTT = false;
 		AtlasLootCharDB.DefaultTT = true;
 	end
-	if( not ItemSync and (AtlasLootCharDB.ItemSyncTT == true)) then
+	if( not ItemSync and not ISync and (AtlasLootCharDB.ItemSyncTT == true)) then
 		AtlasLootCharDB.ItemSyncTT = false;
 		AtlasLootCharDB.DefaultTT = true;
 	end
@@ -429,7 +429,7 @@ function AtlasLootOptions_OnLoad()
 		AtlasLootOptionsFrameLootlinkTT:Disable();
 		AtlasLootOptionsFrameLootlinkTTText:SetText(AL["|cff9d9d9dLootlink Tooltips|r"]);
 	end
-	if( not ItemSync ) then
+	if( not ItemSync and not ISync) then
 		AtlasLootOptionsFrameItemSyncTT:Disable();
 		AtlasLootOptionsFrameItemSyncTTText:SetText(AL["|cff9d9d9dItemSync Tooltips|r"]);
 	end
@@ -3090,7 +3090,7 @@ function AtlasLootItem_OnEnter()
 				if(GetItemInfo(this.itemID) ~= nil) then
 					getglobal(this:GetName().."_Unsafe"):Hide();
 				end
-				ItemSync:ButtonEnter();
+				 ISync:ButtonEnter();
 				if ( AtlasLootCharDB.ItemIDs ) then
 					GameTooltip:AddLine(BLUE..AL["ItemID:"].." "..this.itemID, nil, nil, nil, 1);
 				end
@@ -3113,6 +3113,10 @@ function AtlasLootItem_OnEnter()
 						end
 						AtlasLootTooltip:Show();
 					else
+						if (AtlasLootTooltipDB[this.itemID]) then
+							
+							AtlasLoot_GenerateTooltip(AtlasLootTooltipDB[this.itemID]);
+					else
 						AtlasLootTooltip:SetOwner(this, "ANCHOR_RIGHT", -(this:GetWidth() / 2), 24);
 						AtlasLootTooltip:ClearLines();
 						AtlasLootTooltip:AddLine(RED..AL["Item Unavailable"], nil, nil, nil, 1);
@@ -3123,6 +3127,7 @@ function AtlasLootItem_OnEnter()
 						AtlasLootTooltip:Show();
 					end
 				end
+			end
 			end
 		elseif isEnchant then
 			spellID = tonumber(string.sub(this.itemID, 2));
@@ -3207,6 +3212,32 @@ function AtlasLootItem_OnEnter()
 			end
 		end
 	end
+end
+
+function AtlasLoot_GenerateTooltip(tooltip)
+    AtlasLootTooltip:SetOwner(this, "ANCHOR_RIGHT", -(this:GetWidth() / 2), 24);
+	AtlasLootTooltip:ClearLines();
+    curline=1;
+    increment=false;
+    local i=1;
+    for i,v in ipairs(tooltip) do
+        if(increment==false) then
+            AtlasLootTooltip:AddLine(v, nil, nil, nil, 1);
+            increment=true;
+        else
+            getglobal("AtlasLootTooltipTextRight"..curline):SetText(v);
+            getglobal("AtlasLootTooltipTextRight"..curline):Show();
+            increment=false;
+            curline=curline+1;
+        end
+    end
+    AtlasLootTooltip:AddLine(" ");
+    AtlasLootTooltip:AddLine(RED..AL["Item Unavailable"], nil, nil, nil, 1);
+	AtlasLootTooltip:AddLine(BLUE..AL["ItemID:"].." "..this.itemID, nil, nil, nil, 1);
+	AtlasLootTooltip:AddLine(AL["This item is unsafe.  To view this item without the risk of disconnection, you need to have first seen it in the game world. This is a restriction enforced by Blizzard since Patch 1.10."], nil, nil, nil, 1);
+	AtlasLootTooltip:AddLine(" ");
+	AtlasLootTooltip:AddLine(AL["You can right-click to attempt to query the server.  You may be disconnected."], nil, nil, nil, 1);
+    AtlasLootTooltip:Show();
 end
 
 --------------------------------------------------------------------------------
