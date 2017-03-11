@@ -1,0 +1,87 @@
+------------------------------------------------------------------------
+r32 | burnum | 2008-10-06 00:49:29 +0000 (Mon, 06 Oct 2008) | 1 line
+Changed paths:
+   A /tags/v1.0.1 (from /trunk:31)
+
+Tagging as v1.0.1.
+------------------------------------------------------------------------
+r31 | burnum | 2008-10-06 00:48:48 +0000 (Mon, 06 Oct 2008) | 2 lines
+Changed paths:
+   M /trunk/Readme.html
+
+FuBar_AtlasFu:
+Minor cleanu of Readme.
+------------------------------------------------------------------------
+r30 | burnum | 2008-10-05 23:42:36 +0000 (Sun, 05 Oct 2008) | 2 lines
+Changed paths:
+   M /trunk
+   M /trunk/.pkgmeta
+   M /trunk/Readme.html
+
+FuBar_AtlasFu:
+Check in changes to .pkgmeta etc.
+------------------------------------------------------------------------
+r29 | root | 2008-09-30 15:51:09 +0000 (Tue, 30 Sep 2008) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+
+Hopefully fix .pkgmeta
+------------------------------------------------------------------------
+r28 | root | 2008-09-29 22:01:14 +0000 (Mon, 29 Sep 2008) | 1 line
+Changed paths:
+   M /trunk
+   A /trunk/.pkgmeta
+
+Facilitate WowAce-on-CurseForge transition
+------------------------------------------------------------------------
+r26 | root | 2008-09-29 20:57:54 +0000 (Mon, 29 Sep 2008) | 1 line
+Changed paths:
+   D /tmp/trunk/FuBar_AtlasFu
+   A /trunk (from /tmp/trunk/FuBar_AtlasFu:25)
+
+Importing old repo data under /trunk
+------------------------------------------------------------------------
+r23 | darkclaw | 2008-07-04 20:32:27 +0000 (Fri, 04 Jul 2008) | 2 lines
+Changed paths:
+   M /tmp/trunk/FuBar_AtlasFu/Readme.html
+
+FuBar_AtlasFu:
+- Changed the Readme files link to a Mac OS X WoWAceUpdater for running in Leopard. very nice one.
+------------------------------------------------------------------------
+r21 | darkclaw | 2008-03-25 17:06:25 +0000 (Tue, 25 Mar 2008) | 2 lines
+Changed paths:
+   M /tmp/trunk/FuBar_AtlasFu/FuBar_AtlasFu.toc
+   M /tmp/trunk/FuBar_AtlasFu/Readme.html
+
+FuBar_AtlasFu:
+- Updated TOC for 2.4
+------------------------------------------------------------------------
+r19 | darkclaw | 2008-03-17 00:20:54 +0000 (Mon, 17 Mar 2008) | 2 lines
+Changed paths:
+   M /tmp/trunk/FuBar_AtlasFu
+   A /tmp/trunk/FuBar_AtlasFu/Readme.html
+   D /tmp/trunk/FuBar_AtlasFu/Readme.rtf
+
+FuBar_AtlasFu:
+- Changed Readme to html from rtf
+------------------------------------------------------------------------
+r18 | darkclaw | 2008-03-15 23:15:41 +0000 (Sat, 15 Mar 2008) | 2 lines
+Changed paths:
+   M /tmp/trunk/FuBar_AtlasFu
+
+FuBar_AtlasFu:
+- set some SVN Properties
+------------------------------------------------------------------------
+r17 | darkclaw | 2008-03-15 22:53:43 +0000 (Sat, 15 Mar 2008) | 2 lines
+Changed paths:
+   A /tmp/trunk/FuBar_AtlasFu
+   A /tmp/trunk/FuBar_AtlasFu/AtlasFu.lua
+   A /tmp/trunk/FuBar_AtlasFu/AtlasFuLocale-enUS.lua
+   A /tmp/trunk/FuBar_AtlasFu/FuBar_AtlasFu.toc
+   A /tmp/trunk/FuBar_AtlasFu/Readme.rtf
+   A /tmp/trunk/FuBar_AtlasFu/embeds.xml
+   A /tmp/trunk/FuBar_AtlasFu/icon.tga
+
+FuBar_AtlasFu: initial Commit
+- AtlasFu is an add-on that works with Atlas, adding an Atlas button to the mod FuBar. 
+------------------------------------------------------------------------
