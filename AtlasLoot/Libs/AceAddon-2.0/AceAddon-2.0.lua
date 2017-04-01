@@ -1,4 +1,4 @@
---[[
+﻿--[[
 Name: AceAddon-2.0
 Revision: $Rev: 17957 $
 Developed by: The Ace Development Team (http://www.wowace.com/index.php/The_Ace_Development_Team)
@@ -40,7 +40,7 @@ if GetLocale() == "deDE" then
 	WEBSITE = "Webseite"
 	CREDITS = "Credits" -- fix
 	COMMANDS = "Commands"
-	
+		 
 	ABOUT = "\195\188ber"
 	PRINT_ADDON_INFO = "Gibt Addondaten aus"
 
@@ -345,7 +345,7 @@ elseif GetLocale() == "ruRU" then
 		["Tradeskill"] = "Умения",
 		["UnitFrame"] = "Фреймы персонажей",
 	}
-	else -- enUS
+else -- enUS
 	STANDBY = "|cffff5050(standby)|r"
 	
 	TITLE = "Title"
