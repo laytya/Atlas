@@ -69,16 +69,14 @@ local AQMAXINSTANCES = "68"
 local AQMAXQUESTS = "19"
 
 -- Set title for AtlasQuest side panel
-ATLASQUEST_VERSION = ""..BLUE.."AtlasQuest 4.1.2";
+ATLASQUEST_VERSION = ""..BLUE.."AtlasQuest 4.1.3";
 
 AQ_ShownSide = "Left"
 AQAtlasAuto = 1;
 AQNOColourCheck = nil;
-AtlasQuestHelp = {};
-AtlasQuestHelp[1] = "[/aq + available command: help, left/right, show/hide, autoshow\ndownload adress:\nhttp://ui.worldofwar.net/ui.php?id=3069, http://www.curse-gaming.com/de/wow/addons-4714-1-atlasquest.html]";
 
 local AtlasQuest_Defaults = {
-  ["Version"] =  "4.1.2",
+  ["Version"] =  "4.1.3",
   [UnitName("player")] = {
     ["ShownSide"] = "Left",
     ["AtlasAutoShow"] = 2,
@@ -229,7 +227,7 @@ function AQ_OnLoad()
     if ( AtlasFrame ) then
     	AQATLASMAP = AtlasMap:GetTexture()
     else
-	  AQATLASMAP = 36;
+	  AQATLASMAP = 99;
     end
     --this:RegisterForDrag("LeftButton");
     AQSlashCommandfunction();
@@ -257,8 +255,6 @@ function AQSetButtontext()
       STORYbutton:SetText(AQStoryB);
       OPTIONbutton:SetText(AQOptionB);
       AQOptionCloseButton:SetText(AQ_OK);
-      AtlasQuestTitle:SetText(ATLASQUEST_VERSION);
-      AQCaptionOptionTEXT:SetText(AQOptionsCaptionTEXT);
       AQAutoshowOptionTEXT:SetText(AQOptionsAutoshowTEXT);
       AQLEFTOptionTEXT:SetText(AQOptionsLEFTTEXT);
       AQRIGHTOptionTEXT:SetText(AQOptionsRIGHTTEXT);
@@ -394,7 +390,7 @@ end
 
 -----------------------------------------------------------------------------
 -- Check which program is used (Atlas or AlphaMap)
--- hide panel if instance is 36 (nothing)
+-- hide panel if instance is 99 (nothing)
 -----------------------------------------------------------------------------
 function AQ_OnUpdate(arg1)
   local previousValue = AQINSTANZ;
@@ -408,8 +404,8 @@ function AQ_OnUpdate(arg1)
            AtlasQuest_InstanzencheckAM();
         end
 
-        -- Hides the panel if the map which is shown no quests have (map = 36)
-       if ( AQINSTANZ == 36) then
+        -- Hides the panel if the map which is shown no quests have (map = 99)
+       if ( AQINSTANZ == 99) then
              HideUIPanel(AtlasQuestFrame);
              HideUIPanel(AtlasQuestInsideFrame);
        elseif (( AQINSTANZ ~= previousValue ) or (AQUpdateNOW ~= nil)) then
@@ -445,10 +441,10 @@ function AQ_AtlasOrAlphamap()
            AtlasQuestFrame:SetParent(AtlasFrame);
            if (AQ_ShownSide == "Right" ) then
                AtlasQuestFrame:ClearAllPoints();
-               AtlasQuestFrame:SetPoint("TOP","AtlasFrame", 555, -80);
+               AtlasQuestFrame:SetPoint("TOP","AtlasFrame", 567, -80);
            else
                AtlasQuestFrame:ClearAllPoints();
-               AtlasQuestFrame:SetPoint("TOP","AtlasFrame", -545, -80);
+               AtlasQuestFrame:SetPoint("TOP","AtlasFrame", -556, -80);
            end
            AtlasQuestInsideFrame:SetParent(AtlasFrame);
            AtlasQuestInsideFrame:ClearAllPoints();
@@ -707,7 +703,7 @@ function Atlas_OnShow()
    -- AQ_AtlasOrAlphamap();
    if (AQ_ShownSide == "Right") then
        AtlasQuestFrame:ClearAllPoints();
-       AtlasQuestFrame:SetPoint("TOP","AtlasFrame", 555, -80);
+       AtlasQuestFrame:SetPoint("TOP","AtlasFrame", 567, -80);
   end
   original_Atlas_OnShow(); -- new line #2
 end
@@ -846,4 +842,3 @@ function AQ_OnShow()
    end
   AtlasQuestSetTextandButtons()
 end
-

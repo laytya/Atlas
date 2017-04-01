@@ -1,29 +1,29 @@
 ## Interface: 11200
 ## Title: AtlasQuest
-## Title-deDE: AtlasQuest
-## Title-koKR: AtlasQuest
-## Title-zhCN: AtlasQuest
 ## Notes: Shows the Quests for the instance.
+## Notes-ruRU: Показывает задания для подземелья.
 ## Notes-deDE: Zeigt die Quests, die es f\195\188r die jeweiligen Instanzen gibt.
 ## Notes-koKR: Shows the Quests for the instance.
 ## Notes-zhCN: Shows the Quests for the instance.
-## Author: Thandrenn
-## Original Author: Asurn
-## Updated by: Loather
-## Updated by: Rabidmax
-## Updated by: Thandrenn (aka Mystery8)
+## Author: Asurn, Thandrenn
+## Updated by: Loather, Rabidmax, Thandrenn (aka Mystery8), laytya, Lichery
 ## CLI by: Dazerdude
-## Version: 4.1.2
+## Version: 4.1.3
 ## X-eMail: mystery8@gmail.com
 ## X-Website: www.atlasmod.com/phpBB3/
 ## X-Category: MYADDONS_CATEGORY_MAP
-## X-Date: July 25, 2008
+## X-Date: 01.04.2017
 ## X-Help: AtlasQuestHelp
-## RequiredDeps: 
 ## OptionalDeps: Atlas, AlphaMap, myAddOns
 ## LoadOnDemand: 0
 ## SavedVariablesPerCharacter:
 ## SavedVariables: AtlasQuest_Options,
-## Dependencies:
+
+
+Locale\localization.en.lua
+Locale\localization.de.lua
+Locale\localization.ru.lua
+Locale\localization.cn.lua
+
 AtlasQuest_InsideFrame.xml
 AtlasQuest.xml
