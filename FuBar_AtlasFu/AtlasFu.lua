@@ -4,9 +4,9 @@ AtlasFu = 		AceLibrary("AceAddon-2.0"):new("FuBarPlugin-2.0", "AceDB-2.0")
 local AtlasFu = AtlasFu
 
 --Fubar plugin settings
-AtlasFu.version = "1.0." .. string.sub("$Revision: 17 $", 12, -3)
-AtlasFu.date = string.sub("$Date: 2008-03-15 22:53:43 +0000 (Sat, 15 Mar 2008) $", 8, 17)
-AtlasFu.hasIcon = true
+AtlasFu.version = "1.2"
+AtlasFu.date = "01/04/2017"
+AtlasFu.hasIcon = "Interface\\WorldMap\\WorldMap-Icon"
 AtlasFu.canHideText = true
 AtlasFu.hasNoColor = true
 AtlasFu.clickableTooltip = false
@@ -63,7 +63,7 @@ AtlasFu.OnMenuRequest = {
 
 
 function AtlasFu:OnTextUpdate()
-	self:SetText("Atlas")
+	self:SetText(L["Atlas"])
 end
 
 

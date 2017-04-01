@@ -1,18 +1,16 @@
 ## Interface: 20400
 ## Title: FuBar - |cffffffffAtlas|r|cff00ff00Fu|r
 ## Notes: Adds an Atlas button to FuBar.
-## Version 1.0.1
+## Version 1.2
 ## Dependencies: Atlas, FuBar
-## Author: Steve Dodds
+## Author: Steve Dodds, laytya
 ## SavedVariables: FuBar_AtlasFuDB
 ## X-Embeds: FuBarPlugin-2.0, Tablet-2.0, AceLocale-2.2, AceDB-2.0
 ## X-Category: Map
-## X-Donate: PayPal:sd_at_ebay AT mac DOT com
-## X-License: CC Attribution Noncommercial Share Alike 3.0 License
-
 
 embeds.xml
 
 AtlasFuLocale-enUS.lua
+AtlasFuLocale-ruRU.lua
 AtlasFu.lua
 
