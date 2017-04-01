@@ -22,12 +22,6 @@
 
 --]]
 
---Atlas, an instance map browser
---Author: Dan Gilbert
---Email: loglow@gmail.com
---AIM: dan5981
-
-
 
 local Atlas_DebugMode = false;
 local function debug(info)
@@ -286,10 +280,9 @@ function Atlas_OnLoad()
 	AtlasFrame:RegisterForDrag("LeftButton");
 	
 	--Setting up slash commands involves referencing some strage auto-generated variables
-	SLASH_ATLAS1 = ATLAS_SLASH;
+	SLASH_ATLAS1 = "/atlas";
 	SlashCmdList["ATLAS"] = Atlas_SlashCommand;
 	
-
 end
 
 
@@ -425,21 +418,21 @@ function Atlas_Init()
 	if(EarthFeature_AddButton) then
 		EarthFeature_AddButton(
 		{
-			id = ATLAS_TITLE;
-			name = ATLAS_TITLE;
+			id = "Atlas";
+			name = "Atlas";
 			subtext = ATLAS_SUBTITLE;
 			tooltip = ATLAS_DESC;
-			icon = "Interface\\AddOns\\Atlas\\Images\\AtlasIcon";
+			icon = "Interface\\WorldMap\\WorldMap-Icon";
 			callback = Atlas_Toggle;
 			test = nil;
 		}
 	);
 	elseif(Cosmos_RegisterButton) then
 		Cosmos_RegisterButton(
-			ATLAS_TITLE,
+			"Atlas",
 			ATLAS_SUBTITLE,
 			ATLAS_DESC,
-			"Interface\\AddOns\\Atlas\\Images\\AtlasIcon",
+			"Interface\\WorldMap\\WorldMap-Icon",
 			Atlas_Toggle
 		);
 	end
@@ -447,10 +440,10 @@ function Atlas_Init()
 	--CTMod integration
 	if(CT_RegisterMod) then
 		CT_RegisterMod(
-			ATLAS_TITLE,
+			"Atlas",
 			ATLAS_SUBTITLE,
 			5,
-			"Interface\\AddOns\\Atlas\\Images\\AtlasIcon",
+			"Interface\\WorldMap\\WorldMap-Icon",
 			ATLAS_DESC,
 			"switch",
 			"",
@@ -491,7 +484,7 @@ end
 --Parses slash commands
 --If an unrecognized command is given, toggle Atlas
 function Atlas_SlashCommand(msg)
-	if(msg == ATLAS_SLASH_OPTIONS) then
+	if(msg == "options" or msg == "opt") then
 		AtlasOptions_Toggle();
 	else
 		Atlas_Toggle();

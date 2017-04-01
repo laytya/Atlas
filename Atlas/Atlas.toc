@@ -1,22 +1,31 @@
 ## Interface: 11200
-## Title: Atlas
-## Title-zhTW: |r|cFF0099FF[地圖]|rAtlas 副本地圖
-## Notes: Instance Map Browser
+## Title: Atlas |cff7fff7f -Ace2-|r
+## Notes: Atlas: instance Map Browser
 ## Notes-deDE: Instanzkarten-Browser
 ## Notes-frFR: Navigateur de cartes d'instances
 ## Notes-zhTW: 副本地圖集, 瀏覽各副本、戰場地圖以及飛行地圖
 ## Notes-zhCN: 副本地图浏览器
 ## Notes-esES: Navegador de Mapas de Mazmorras
 ## Notes-ruRU: Обозреватель подземелий
-## Version: 1.12.0
-## X-Date: July, 2008
-## Author: Dan Gilbert
+## Version: 1.13.0
+## X-Date: 01.04.2017
+## Author: Dan Gilbert, Daviesh, Thandrenn, Asurn, Loather, Rabidmax, Dazerdude, laytya, Lichery
 ## X-Email: loglow@gmail.com
-## X-Website: http://www.atlasmod.com
-## X-Category: MYADDONS_CATEGORY_MAP
+## X-Website: https://github.com/laytya/Atlas
+## X-Category: Map
 ## X-OptionsFrame: AtlasOptionsFrame
-## SavedVariablesPerCharacter: AtlasOptions
+## SavedVariables: AtlasOptions
 ## OptionalDeps: Titan, myAddOns, EarthFeatureFrame
+
+Libs\AceLibrary\AceLibrary.lua
+Libs\AceOO-2.0\AceOO-2.0.lua
+Libs\AceAddon-2.0\AceAddon-2.0.lua
+Libs\AceLocale-2.2\AceLocale-2.2.lua
+Libs\Babble-Boss-2.2\Babble-Boss-2.2.lua
+Libs\Babble-Class-2.2\Babble-Class-2.2.lua
+Libs\Babble-Faction-2.2\Babble-Faction-2.2.lua
+Libs\Babble-ItemSet-2.2\Babble-ItemSet-2.2.lua
+Libs\Babble-Zone-2.2\Babble-Zone-2.2.lua
 
 Locale\Atlas-enUS.lua
 Locale\Atlas-deDE.lua
@@ -25,18 +34,14 @@ Locale\Atlas-zhCN.lua
 Locale\Atlas-esES.lua
 Locale\Atlas-zhTW.lua
 Locale\Atlas-ruRU.lua
+
 AtlasMaps.lua
-
 AtlasDropDown.lua
-
 Atlas.lua
 Atlas.xml
-
 AtlasButton.lua
 AtlasButton.xml
-
 AtlasOptions.lua
 AtlasOptions.xml
-
 AtlasTitan.lua
 AtlasTitan.xml
