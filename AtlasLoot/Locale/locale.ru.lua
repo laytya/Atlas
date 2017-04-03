@@ -517,5 +517,3 @@ AL:RegisterTranslations("ruRU", function() return {
 	["Revered Rewards"] = "награды почтения";
 	["Exalted Rewards"] = "награды превознесения";
     } end)
-
-

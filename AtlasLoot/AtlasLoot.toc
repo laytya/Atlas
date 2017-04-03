@@ -25,7 +25,7 @@ Libs\Babble-Faction-2.2\Babble-Faction-2.2.lua
 Libs\Babble-ItemSet-2.2\Babble-ItemSet-2.2.lua
 Libs\Babble-Spell-2.2\Babble-Spell-2.2.lua
 Libs\Babble-Zone-2.2\Babble-Zone-2.2.lua
-Libs\Dewdrop\Dewdrop-2.0.lua
+Libs\Dewdrop-2.0\Dewdrop-2.0.lua
 
 Locale\Locale.xml
 Bossnames\BossNames.xml

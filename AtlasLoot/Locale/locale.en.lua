@@ -529,5 +529,4 @@ AL:RegisterTranslations("enUS", function() return {
 	["Honored Rewards"] = true;
 	["Revered Rewards"] = true;
 	["Exalted Rewards"] = true;
-	} end)
-	
+	} end)	
