@@ -467,7 +467,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 16812, "INV_Gauntlets_14", "=q4=Gloves of Prophecy", "=ds=#s10#, #a1# =q7=#db27#" },
 		{ 16817, "INV_Belt_22", "=q4=Girdle of Prophecy", "=ds=#s10#, #a1# =q7=#x34# (#z1#)" },
 		{ 16814, "INV_Pants_08", "=q4=Pants of Prophecy", "=ds=#s11#, #a1# =q7=#db26#" },
-		{ 16811, "INV_Gauntlets_07", "=q4=Boots of Prophecy", "=ds=#s12#, #a1# =q7=#db30#" },
+		{ 16811, "INV_Boots_07", "=q4=Boots of Prophecy", "=ds=#s12#, #a1# =q7=#db30#" },
 	};
 	T1Warlock = {
 		{ 0, "", "", "" },

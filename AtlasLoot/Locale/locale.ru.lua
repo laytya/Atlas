@@ -16,7 +16,7 @@ AL:RegisterTranslations("ruRU", function() return {
     ["Select Sub-Table"] = "Выбор Под-Таблицы";
     ["Drop Rate: "] = "Шанс выпадения ";
     ["Click boss name to view loot."] = "Кликните по имени босса для просмотра трофеев.";
-	["ALT+Click to use WishList."] = "ALT+Click на предмет для добавление в список пожеланий.";
+	["ALT+Click to use WishList."] = "ALT+ЛКМ на предмет для добавление в список пожеланий.";
 	["Left-click to open AtlasLoot.\nMiddle-click for AtlasLoot options.\nRight-click and drag to move this button."] = "Нажмите левую клавишу мыши, чтобы открыть AtlasLoot.\nНажмите среднюю клавишу мыши, чтобы открыть настройки AtlasLoot.\nНажмите правую клавишу мыши для перемещения кнопки.";
     ["Various Locations"] = "Разное местонахождение";
     ["This is a loot browser only.\nTo view maps as well, install either Atlas or Alphamap."] = "Это только обозреватель добычи.\nДля просмотра карт у вас должен быть установлен Atlas или Alphamap.";

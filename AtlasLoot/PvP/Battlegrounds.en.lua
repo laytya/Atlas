@@ -125,7 +125,6 @@ AtlasLootBattlegrounds = {
 		"";
 		"";
 		"";
-		"";
 		"AVRepFriendly";
 		"AVRepHonored";
 		"AVRepRevered";
