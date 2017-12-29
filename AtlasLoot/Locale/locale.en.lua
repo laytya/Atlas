@@ -101,6 +101,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Crafted Sets - Blacksmithing"] = true;
 	["Crafted Sets - Tailoring"] = true;
 	["Crafted Sets - Leatherworking"] = true;
+	["This is a loot browser only.  To view maps as well, install either Atlas or Alphamap."] = true;
 	["Welcome to Atlasloot Enhanced.  Please take a moment to set your preferences."] = true;
 	["New feature in 4.05.00: Advanced searching functionality is now available. You can type in a partial item name, for example typing 'elixir' gives all items in the database with 'elixir' in the name.  Big thanks to Kurax for his help."] = true;
 	["New feature in 4.06.00: All professions are now included in the AtlasLoot_Crafting module."] = true;
