@@ -54,6 +54,20 @@ BabbleClass:RegisterTranslations("ruRU", function()
 	}
 end)
 
+BabbleClass:RegisterTranslations("esES", function()
+	return {
+		["Warlock"] = "Brujo",
+		["Warrior"] = "Guerrero",
+		["Hunter"] = "Cazador",
+		["Mage"] = "Mago",
+		["Priest"] = "Sacerdote",
+		["Druid"] = "Druida",
+		["Paladin"] = "Paladín",
+		["Shaman"] = "Chamán",
+		["Rogue"] = "Pícaro",
+	}
+end)
+
 BabbleClass:RegisterTranslations("deDE", function()
 	return {
 		["Warlock"] = "Hexenmeister",

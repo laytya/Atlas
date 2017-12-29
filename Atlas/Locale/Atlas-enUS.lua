@@ -242,6 +242,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Nekrum Gutchewer"] = true;
 	["Dustwraith"] = true;
 	["Sergeant Bly"] = true;
+	["Shadowpriest Sezz'ziz"] = true,
 	["Weegli Blastfuse"] = true;
 	["Murta Grimgut"] = true;
 	["Raven"] = true;
