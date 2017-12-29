@@ -5,6 +5,7 @@
 ## Notes-deDE: Zeigt die Quests, die es f\195\188r die jeweiligen Instanzen gibt.
 ## Notes-koKR: Shows the Quests for the instance.
 ## Notes-zhCN: Shows the Quests for the instance.
+## Notes-esES: Muestra las Misiones para la instancia.
 ## Author: Asurn, Thandrenn
 ## Updated by: Loather, Rabidmax, Thandrenn (aka Mystery8), laytya, Lichery
 ## CLI by: Dazerdude
@@ -24,6 +25,7 @@ Locale\localization.en.lua
 Locale\localization.de.lua
 Locale\localization.ru.lua
 Locale\localization.cn.lua
+Locale\localization.es.lua
 
 AtlasQuest_InsideFrame.xml
 AtlasQuest.xml
