@@ -1234,9 +1234,7 @@ Inst5Quest17_HORDE_Folgequest = Inst5Quest17_Folgequest
 
 --------------- INST6 - Blackwing Lair (BWL) ---------------
 Inst6Story = "La Guarida Alanegra se encuentra en la cúspide de la Cumbre de Roca Negra. En los oscuros recodos del pico de la montaña, Nefarian a comenzado a completar las etapas finales de su plan para destruir a Ragnaros de una vez por todas y llevar a sus ejércitos hacia la supremacía absoluta sobre todas las razas de Azeroth."
-Inst6Caption = "Guarida de Alanegra"
-Inst6Caption2 = "Guarida de Alanegra (Historia Parte 1)"
-Inst6Caption3 = "Guarida de Alanegra (Historia Parte 2)"
+Inst6Caption = "Guarida Alanegra"
 
 Inst6QAA = "4 Misiones"
 Inst6QAH = "4 Misiones"
@@ -1246,7 +1244,7 @@ Inst6Quest1 = "1. La corrupción de Nefarius" -- 8730
 Inst6Quest1_Level = "60"
 Inst6Quest1_Attain = "60"
 Inst6Quest1_Aim = "Mata a Nefarian y recupera del fragmento de cetro rojo. Llévaselo a Anacronos a las Cavernas del Tiempo, en Tanaris. Tienes 5 horas para completar esta tarea."
-Inst6Quest1_Location = "Vaelastrasz el Corrupto (Guarida de Alanegra; "..YELLOW.."[2]"..WHITE..")"
+Inst6Quest1_Location = "Vaelastrasz el Corrupto (Guarida Alanegra; "..YELLOW.."[2]"..WHITE..")"
 Inst6Quest1_Note = "Puede conseguir sola una persona el fragmento. Anacronos (Tanaris - Cavernas del Tiempo; "..YELLOW.."65,49"..WHITE..")"
 Inst6Quest1_Prequest = "Encomienda a los Vuelos" -- 8555
 Inst6Quest1_Folgequest = "El poder de Kalimdor" -- 8742
@@ -1938,7 +1936,7 @@ Inst9Quest8_Level = "60"
 Inst9Quest8_Attain = "55"
 Inst9Quest8_Aim = "Según la carta, el general Drakkisath guarda la enseña. Quizás deberías investigarlo."
 Inst9Quest8_Location = "Orden de Puño Negro (botín del Intendente del Escudo del Estigma; "..YELLOW.."[7] en el mapa de la Entrada"..WHITE..")"
-Inst9Quest8_Note = "Es la misión para la armonización con Guarida de Ala Negra. El Intendente del Escudo del Estigma está a la derecha justo antes del portal a la Cumbre de Roca Negra.\n\nGeneral Drakkisath está en "..YELLOW.."[9]"..WHITE..". El orbe está detrás de él."
+Inst9Quest8_Note = "Es la misión para la armonización con Guarida Alanegra. El Intendente del Escudo del Estigma está a la derecha justo antes del portal a la Cumbre de Roca Negra.\n\nGeneral Drakkisath está en "..YELLOW.."[9]"..WHITE..". El orbe está detrás de él."
 Inst9Quest8_Prequest = "Ninguno"
 Inst9Quest8_Folgequest = "Ninguno"
 -- No Rewards for this quest
