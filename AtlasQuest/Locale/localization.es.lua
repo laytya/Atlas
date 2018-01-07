@@ -18,7 +18,10 @@
 	You should have received a copy of the GNU General Public License
 	along with AtlasQuest; if not, write to the Free Software
 	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-	
+
+
+Translated by/Traducido por: Woopydalan 
+Last update/Último actualización: 2017-12-30	
 --]]
 
 
@@ -5852,7 +5855,7 @@ Inst34Quest2 = "2. El libro de contabilidad mágico de Azuregos" -- 8575
 Inst34Quest2_Level = "60"
 Inst34Quest2_Attain = "60"
 Inst34Quest2_Aim = "Entrega el libro de contabilidad mágico de Azuregos a Narain Sabelotodo de Tanaris."
-Inst34Quest2_Location = "Espirítu de Azuregos (Azshara; "..YELLOW.."56,83"..WHITE..")"
+Inst34Quest2_Location = "Espíritu de Azuregos (Azshara; "..YELLOW.."56,83"..WHITE..")"
 Inst34Quest2_Note = "Encuentras a Narain Sabelotodo en Tanaris en "..YELLOW.."65.17"..WHITE.."."
 Inst34Quest2_Prequest = "Encomienda a los Vuelos" -- 8555
 Inst34Quest2_Folgequest = "La traducción del libro de contabilidad" -- 8576
