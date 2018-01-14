@@ -594,7 +594,7 @@ AL:RegisterTranslations("esES", function() return {
 
 	--World Bosses
 	["Emerald Dragons"] = "Dragones Esmeraldas";
-	["Spirit of Azuregos"] = "Espirítu de Azuregos";
+	["Spirit of Azuregos"] = "Espíritu de Azuregos";
 	["Emerald Dragons Trash"] = "Bichos de los Dragones Esmeraldas";
 
 	--Scarlet Monastery (Entrance)
