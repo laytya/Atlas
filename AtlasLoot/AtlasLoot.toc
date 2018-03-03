@@ -2,6 +2,7 @@
 ## Title: AtlasLoot Enhanced
 ## Notes: Shows the possible loot from the bosses
 ## Notes-ruRU: Показывает возможную добычу с боссов
+## Notes-esES: Muestra el botín de los jefes
 ## Author: Daviesh, laytya, Lichery
 ## Version: 4.07.01
 ## X-Date: 01.04.2017
