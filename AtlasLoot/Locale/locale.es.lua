@@ -55,8 +55,8 @@ AL:RegisterTranslations("esES", function() return {
 	["Search options"] = "Opciones de Buscar";
 	["Partial matching"] = "Coincidencia parcial";
 	["If checked, AtlasLoot searches item names for a partial match."] = "Si lo marcas, AtlasLoot buscará el nombre de los objetos con una coincidencia parcial.";
-	["Queries the server for all items"] = "Pregunta al servidor por todos los objectos";
-	["on this page. The items will be"] = "de esta página. Los objectos serán";
+	["Queries the server for all items"] = "Pregunta al servidor por todos los objetos";
+	["on this page. The items will be"] = "de esta página. Los objetos serán";
 	["refreshed when you next mouse"] = "refrescados al pasar el ratón";
 	["over them."] = "sobre ellos";
 	["Default settings applied!"] = "¡Configuración por defecto aplicada!";
