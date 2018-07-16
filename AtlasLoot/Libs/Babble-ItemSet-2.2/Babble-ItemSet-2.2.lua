@@ -419,6 +419,205 @@ BabbleItemSet:RegisterTranslations("ruRU", function()
 	}
 end)
 
+BabbleItemSet:RegisterTranslations("esES", function()
+	return {
+	-- Blacksmithing Crafted Sets
+	["The Darksoul"] = "El Almanegra",
+	["Imperial Plate"] = "Placas imperiales",
+	["Bloodsoul Embrace"] = "Abrazo de alma de sangre",
+	
+	-- Tailoring Crafted Sets
+	["Bloodvine Garb"] = "Atuendo de vid de sangre",
+
+	-- Leatherworking Crafted Sets
+	["Black Dragon Mail"] = "Malla de dragón negro",
+	["Blood Tiger Harness"] = "Arnés de tigre de sangre",
+	["Blue Dragon Mail"] = "Malla de dragón azul",
+	["Devilsaur Armor"] = "Armadura de demosaurio",
+	["Green Dragon Mail"] = "Malla de dragón verde",
+	["Ironfeather Armor"] = "Armadura Plumahierro",
+	["Primal Batskin"] = "Piel de murciélago primigenia",
+	["Stormshroud Armor"] = "Armadura de sudario de tormenta",
+	["Volcanic Armor"] = "Armadura volcánica",
+
+	-- Vanilla Sets
+	["Defias Leather"] = "Cuero Defias",
+	["Embrace of the Viper"] = "Abrazo de la víbora",
+	["Chain of the Scarlet Crusade"] = "Cadena de la Cruzada Escarlata",
+	["The Gladiator"] = "El Gladiador",
+	["Ironweave Battlesuit"] = "Abrazo de paño de alma",
+	["Necropile Raiment"] = "Vestiduras Necrópilas",
+	["Cadaverous Garb"] = "Atuendo cadavérico",
+	["Bloodmail Regalia"] = "Atavío de Mallasangre",
+	["Deathbone Guardian"] = "Guardián Mortueso",
+	["The Postmaster"] = "El Jefe de Correos",
+	--["Scourge Invasion"] = "Invasión de la Plaga", --Comprobar
+	["Regalia of Undead Cleansing"] = "Atavío de eliminación de no-muertos",
+	["Undead Slayer's Armor"] = "Armadura de mata no-muertos",
+	["Garb of the Undead Slayer"] = "Atuendo de mata no-muertos",
+	["Battlegear of Undead Slaying"] = "Equipo de batalla de matanza de no-muertos",
+	["Shard of the Gods"] = "Fragmentos de los Dioses",
+	--["Zul'Gurub Rings"] = "Anillos de Zul'Gurub",
+	["Major Mojo Infusion"] = "Infusión sublime de Mojo",
+	["Overlord's Resolution"] = "Resolución de Señor Supremo",
+	["Prayer of the Primal"] = "Rezo del Primigenio",
+	["Zanzil's Concentration"] = "Concentración de Zanzil",
+	["Spirit of Eskhandar"] = "Espiritú de Eskhandar",
+	["The Twin Blades of Hakkari"] = "Las Espadas gemelas de Hakkari",
+	["Primal Blessing"] = "Bendición Primigenia",
+	["Dal'Rend's Arms"] = "Armas de Dal'Rend",
+	["Spider's Kiss"] = "Beso de la araña",
+
+	-- ZG Sets
+	["Haruspex's Garb"] = "Atuendo de Haruspex",
+	["Predator's Armor"] = "Armadura del Predador",
+	["Illusionist's Attire"] = "Ropajes del Ilusionista",
+	["Freethinker's Armor"] = "Armadura del Librepensador",
+	["Confessor's Raiment"] = "Vestiduras del Confesor",
+	["Madcap's Outfit"] = "Equipo del Loquillo",
+	["Augur's Regalia"] = "Atavío de Augur",
+	["Demoniac's Threads"] = "Vestuario Demoníaco",
+	["Vindicator's Battlegear"] = "Equipo de batalla del Vindicador",
+
+	-- AQ20 Sets
+	["Symbols of Unending Life"] = "Símbolos de de vida inagotable",
+	["Trappings of the Unseen Path"] = "Ajuar de la senda oculta",
+	["Trappings of Vaulted Secrets"] = "Ajuar de secretos oscuros",
+	["Battlegear of Eternal Justice"] = "Equipo de batalla de Justicia eterna",
+	["Finery of Infinite Wisdom"] = "Galas de infinita sabiduría",
+	["Emblems of Veiled Shadows"] = "Emblemas de las Sombras Ocultas",
+	["Gift of the Gathering Storm"] = "Ofrenda de la tormenta inminente",
+	["Implements of Unspoken Names"] = "Implementos de los Nombres Prohibidos",
+	["Battlegear of Unyielding Strength"] = "Equipo de batalla de fuerza implacable",
+
+	-- AQ40 Sets
+	["Genesis Raiment"] = "Vestiduras génesis",
+	["Striker's Garb"] = "Atuendo de artillero",
+	["Enigma Vestments"] = "Vestimentas Enigma",
+	["Avenger's Battlegear"] = "Equipo de batalla del Vengador",
+	["Garments of the Oracle"] = "Prendas del oráculo",
+	["Deathdealer's Embrace"] = "Abrazo de mortífero",
+	["Stormcaller's Garb"] = "Atuendo de clamatormentas",
+	["Doomcaller's Attire"] = "Ropajes de clamacondenas",
+	["Conqueror's Battlegear"] = "Equipo de batalla de conquistador",
+
+	-- T0 Sets
+	["Wildheart Raiment"] = "Vestiduras Corazón Salvaje",
+	["Beaststalker Armor"] = "Armadura de Acechador",
+	["Magister's Regalia"] = "Ropajes del Magistrado",
+	["Lightforge Armor"] = "Armadura Forjaluz",
+	["Vestments of the Devout"] = "Vestimentas del Devoto",
+	["Shadowcraft Armor"] = "Armadura Oficioscuro",
+	["The Elements"] = "Los Elementos",
+	["Dreadmist Raiment"] = "Vestiduras Calígine",
+	["Battlegear of Valor"] = "Equipo de batalla del Valor",
+
+	-- T0.5 Sets
+	["Feralheart Raiment"] = "Vestiduras Cuoroferal",
+	["Beastmaster Armor"] = "Armadura de Señor de Bestias",
+	["Sorcerer's Regalia"] = "Atavío de hechicero",
+	["Soulforge Armor"] = "Armadura Forjalma",
+	["Vestments of the Virtuous"] = "Vestimentas del virtuoso",
+	["Darkmantle Armor"] = "Armadura mantoscuro",
+	["The Five Thunders"] = "Los cinco truenos",
+	["Deathmist Raiment"] = "Vestiduras Brumamorta",
+	["Battlegear of Heroism"] = "Equipo de batalla de heroísmo",
+
+	-- T1 Sets
+	["Cenarion Raiment"] = "Vestiduras de Cenarius",
+	["Giantstalker Armor"] = "Armadura de acechagigantes",
+	["Arcanist Regalia"] = "Atavío de arcanista",
+	["Lawbringer Armor"] = "Armadura de Justiciero",
+	["Vestments of Prophecy"] = "Vestimentas de profecía",
+	["Nightslayer Armor"] = "Armadura de Destripador Nocturno",
+	["The Earthfury"] = "Furia de la tierra",
+	["Felheart Raiment"] = "Vestiduras Corazón Oscuro",
+	["Battlegear of Might"] = "Equipo de batalla de poderío",
+
+	-- T2 Sets
+	["Stormrage Raiment"] = "Vestiduras de Tempestina",
+	["Dragonstalker Armor"] = "Armadura de acechadragón",
+	["Netherwind Regalia"] = "Atavío viento abisal",
+	["Judgement Armor"] = "Armadura de la Sentencia",
+	["Vestments of Transcendence"] = "Vestimentas de trascendencia",
+	["Bloodfang Armor"] = "Armadura Colmillo de Sangre",
+	["The Ten Storms"] = "Las diez tormentas",
+	["Nemesis Raiment"] = "Vestiduras de la Némesis",
+	["Battlegear of Wrath"] = "Equipo de batalla de la cólera",
+
+	-- T3 Sets
+	["Dreamwalker Raiment"] = "Vestiduras de Caminasueños",
+	["Cryptstalker Armor"] = "Armadura de acechacriptas",
+	["Frostfire Regalia"] = "Atavío de escarchafuego",
+	["Redemption Armor"] = "Armadura de la Redención",
+	["Vestments of Faith"] = "Vestimentas de fe",
+	["Bonescythe Armor"] = "Armadura de segahuesos",
+	["The Earthshatterer"] = "El Trizaterrador",
+	["Plagueheart Raiment"] = "Vestidura Corazón de la Peste",
+	["Dreadnaught's Battlegear"] = "Equipo de batalla de Acorator",
+
+	-- AB Sets (Alliance)
+	["The Highlander's Intent"] = "Intención del montañés",
+	["The Highlander's Purpose"] = "Propósito del montañés",
+	["The Highlander's Will"] = "Voluntaz del montañés",
+	["The Highlander's Determination"] = "Determinación del montañés",
+	["The Highlander's Fortitude"] = "Entereza del montañés",
+	["The Highlander's Resolution"] = "Resolución de montañés",
+	["The Highlander's Resolve"] = "Decisión del montañés",
+
+	-- AB Sets (Horde)
+	["The Defiler's Intent"] = "Intención del Envilecido",
+	["The Defiler's Purpose"] = "Propósito del Rapiñador",
+	["The Defiler's Will"] = "Voluntad del Rapiñador",
+	["The Defiler's Determination"] = "Determinación del Envilecido",
+	["The Defiler's Fortitude"] = "Entereza del Envilecido",
+	["The Defiler's Resolution"] = "Resolución del Envilecido",
+
+	-- PvP Rare Set (Alliance)
+	["Lieutenant Commander's Refuge"] = "Refugio de Teniente Coronel",
+	["Lieutenant Commander's Pursuance"] = "Persistencia de Teniente Coronel",
+	["Lieutenant Commander's Arcanum"] = "Arcano de Teniente Coronel",
+	["Lieutenant Commander's Redoubt"] = "Reducto de Teniente Coronel",
+	["Lieutenant Commander's Investiture"] = "Investidura de Teniente Coronel",
+	["Lieutenant Commander's Guard"] = "Guardia de Teniente Coronel",
+	--["Lieutenant Commander's Stormcaller"] = "Sacudetierra de Teniente Coronel",
+	["Lieutenant Commander's Dreadgear"] = "Equipo de terror de Teniente Coronel",
+	["Lieutenant Commander's Battlearmor"] = "Armadura de batalla de Teniente Coronel",
+
+	-- PvP Rare Set (Horde)
+	["Champion's Refuge"] = "Refugio de Campeón",
+	["Champion's Pursuance"] = "Cumplimiento de Campeón",
+	["Champion's Arcanum"] = "Arcno de Campeón",
+	--["Champion's Redoubt"] = "Reducto de Campeón",
+	["Champion's Investiture"] = "Investidura de Campeón",
+	["Champion's Guard"] = "Guardia de Campeón",
+	["Champion's Stormcaller"] = "Clamatormentas de Campeón",
+	["Champion's Dreadgear"] = "Equipo de terror de Campeón",
+	["Champion's Battlearmor"] = "Armadura de batalla de Campeón",
+
+	-- PvP Epic Set (Alliance)
+	["Field Marshal's Sanctuary"] = "Santuario de Mariscal de campo",
+	["Field Marshal's Pursuit"] = "Persecución de Mariscal de campo",
+	["Field Marshal's Regalia"] = "Atavío de Mariscal de campo",
+	["Field Marshal's Aegis"] = "Égida de Mariscal de campo",
+	["Field Marshal's Raiment"] = "Vestiduras de Mariscal de campo",
+	["Field Marshal's Vestments"] = "Vestimentas de Mariscal de campo",
+	--["Field Marshal's Earthshaker"] = "Sacudetierra de Mariscal de campo",
+	["Field Marshal's Threads"] = "Vestuario de Mariscal de campo",
+	["Field Marshal's Battlegear"] = "Equipo de batalla de Mariscal de campo",
+
+	-- PvP Epic Set (Horde)
+	["Warlord's Sanctuary"] = "Santuario de Señor de la Guerra",
+	["Warlord's Pursuit"] = "Persecución de Señor de la Guerra",
+	["Warlord's Regalia"] = "Atavío de Señor de la Guerra",
+	--["Warlord's Aegis"] = "Égida de Señor de la Guerra",
+	["Warlord's Raiment"] = "Vestiduras de Señor de la Guerra",
+	["Warlord's Vestments"] = "Vestimentas de Señor de la Guerra",
+	["Warlord's Earthshaker"] = "Sacudetierra de Señor de la Guerra",
+	["Warlord's Threads"] = "Vestuario de Señor de la Guerra",
+	["Warlord's Battlegear"] = "Equipo de batalla de Señor de la Guerra",
+	}
+end)
 
 BabbleItemSet:Debug()
 BabbleItemSet:SetStrictness(true)

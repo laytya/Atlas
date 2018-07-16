@@ -123,6 +123,58 @@ BabbleFaction:RegisterTranslations("ruRU", function()
 		["Revered"] = "Почтение",
 		["Exalted"] = "Превознесение",
 	}
+
+end)
+
+BabbleFaction:RegisterTranslations("esES", function()
+	return {
+	--Player Factions
+	["Alliance"] = "Alianza",
+	["Horde"] = "Horda",
+
+	-- Classic Factions
+	["Argent Dawn"] = "Alba Argenta",
+	["Bloodsail Buccaneers"] = "Bucaneros Velasangre",
+	["Booty Bay"] = "Bahía del Botín",
+	["Brood of Nozdormu"] = "Linaje de Nozdormu",
+	["Cenarion Circle"] = "Círculo Cenarion",
+	["Darkmoon Faire"] = "Feria de la Luna Negra",
+	["Darkspear Trolls"] = "Trols de Lanza Negra",
+	["Darnassus"] = "Darnassus",
+	["The Defilers"] = "Los Rapiñadores",
+	["Everlook"] = "Vista Eterna",
+	["Frostwolf Clan"] = "Clan Lobo Gélido",
+	["Gadgetzan"] = "Gadgetzan",
+	["Gelkis Clan Centaur"] = "Centauro del clan Gelkis",
+	["Gnomeregan Exiles"] = "Exiliado de Gnomeregan",
+	["Hydraxian Waterlords"] = "Señores del Agua de Hydraxis",
+	["Ironforge"] = "Forjaz",
+	["The League of Arathor"] = "Liga de Arathor",
+	["Magram Clan Centaur"] = "Centauro del clan Magram",
+	["Orgrimmar"] = "Orgrimmar",
+	["Ratchet"] = "Trinquete",
+	["Ravenholdt"] = "Ravenholdt",
+	["Silverwing Sentinels"] = "Centinelas Ala de Plata",
+	["Shen'dralar"] = "Shen'dralar",
+	["Stormpike Guard"] = "Guardia de Pico Tormenta",
+	["Stormwind"] = "Ventormenta",
+	["Syndicate"] = "Sindicato",
+	["Thorium Brotherhood"] = "Hermandad del torio",
+	["Thunder Bluff"] = "Cima del Trueno",
+	["Timbermaw Hold"] = "Bastión de los Fauces de Madera",
+	["Undercity"] = "Entrañas",
+	["Warsong Outriders"] = "Escolta Grito de Guerra",
+	["Wildhammer Clan"] = "Clan Martillo Salvaje",
+	["Wintersaber Trainers"] = "Instructoras de sableinvernales",
+	["Zandalar Tribe"] = "Tribu Zandalar",
+
+	--Rep Levels
+	["Neutral"] = "Neutral",
+	["Friendly"] = "Amistoso",
+	["Honored"] = "Honrado",
+	["Revered"] = "Reverenciado",
+	["Exalted"] = "Exaltado",
+	}
 end)
 
 
