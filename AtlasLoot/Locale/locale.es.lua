@@ -48,7 +48,7 @@ AL:RegisterTranslations("esES", function() return {
 	["Hide AtlasLoot Panel"] = "Ocultar panel de AtlasLoot";
 	["Show Minimap Button"] = "Mostrar botón en el minimapa";
 	["Suppress text spam when querying items"] = "Suprimir texto de spam al preguntar por objetos";
-	["Done"] = "Hecho";
+	["Done"] = "Aceptar";
 	["WishList"] = "Lista deseada";
 	["Search Result: %s"] = "Buscar resultado: %s";
 	["Last Result"] = "Último resultado";
