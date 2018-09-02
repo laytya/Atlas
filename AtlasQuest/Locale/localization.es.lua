@@ -48,7 +48,7 @@ local YELLOW = "|cffFFd200";   -- Ingame Yellow
 AQHelpText = "escribir /aq o atlasquest "..WHITE.."[comando]"..YELLOW.."\ncomandos: ayuda; opcion/config; mostrar/ocultar; izquierdo/derecho; color; auto-mostrar"..RED.."(solamente Atlas)"
 --
 AQOptionsCaptionTEXT = "Opciones de AtlasQuest";
-AQ_OK = "Hecho"
+AQ_OK = "Aceptar"
 
 -- Autoshow
 AQOptionsAutoshowTEXT = "Mostrar el panel de AtlasQuest con Atlas.";
@@ -171,7 +171,7 @@ Inst1Quest1_Level = "17"
 Inst1Quest1_Attain = "14"
 Inst1Quest1_Aim = "La exploradora Riell de la Colina del Centinela quiere que le lleves 10 pañuelos de seda roja."
 Inst1Quest1_Location = "Exploradora Riell (Páramos de Poniente - Colina del Centinela; "..YELLOW.."56, 47"..WHITE..")"
-Inst1Quest1_Note = "Puedes conseguir los Pañuelos rojos de seda por despojar a los mineros dentro de Las Minas de la Muerte o afuera de la instancia. La misión estará disponible después de que termines la cadena de misiones La hermandad de los Defias hasta la parte para matar Edwin VanCleef."
+Inst1Quest1_Note = "Puedes conseguir los Pañuelos rojos de seda por despojar a los mineros dentro de Las Minas de la Muerte o afuera de la instancia. La misión estará disponible después de que termines la cadena de misiones La hermandad de los Defias hasta la misión para matar Edwin VanCleef."
 Inst1Quest1_Prequest = "La hermandad de los Defias (id = 155)" -- 155
 Inst1Quest1_Folgequest = "Ninguno"
 --
@@ -184,7 +184,7 @@ Inst1Quest2 = "2. Recolección de recuerdos" -- 168
 Inst1Quest2_Level = "18"
 Inst1Quest2_Attain = "14"
 Inst1Quest2_Aim = "Recupera 4 Tarjetas del Sindicato Minero y llévaselas a Wilder Cardortiga, en Ventormenta."
-Inst1Quest2_Location = "Wilder Cardortiga (Ventormenta - Distrito de los Enanos; "..YELLOW.."65, 21"..WHITE..")"
+Inst1Quest2_Location = "Wilder Cardortiga (Ventormenta - Distrito de los Enanos; "..YELLOW.."65,21"..WHITE..")"
 Inst1Quest2_Note = "Despoja a los No-muertos afuera de la instancia en la localización cerca de "..YELLOW.."[3]"..WHITE.." en el mapa de la Entrada para obtener las tarjetas."
 Inst1Quest2_Prequest = "Ninguno"
 Inst1Quest2_Folgequest = "Ninguno"
@@ -238,7 +238,7 @@ Inst1Quest6_Attain = "20"
 Inst1Quest6_Aim = "Consulta la lista y llévale a Jordan Fontana de Forjaz lo siguiente: madera de roble de Piedrablanca, envío de oro refinado de Jordan, el martillo de herrero de Jordan y una gema Kor."
 Inst1Quest6_Location = "Jordan Fontana (Dun Morogh - Entrada de Forjaz; "..YELLOW.."52,36"..WHITE..")"
 Inst1Quest6_Note = "Solamente Paladín: Para ver la nota haz clic en "..YELLOW.."[Información de La prueba de rectitud]"..WHITE.."."
-Inst1Quest6_Page = {2, "¡Esta misión está disponible solamente para paladines!\n\n1. Despoja a los Talladores de madera goblin en "..YELLOW.."[Las Minas de la Muerte]"..WHITE.." cerca de "..YELLOW.."[3]"..WHITE.." para obtener la Madera de roble de Piedrablanca.\n\n2. Habla con Bailor Petramano (Loch Modan - Thelsamar; "..YELLOW.."35,44"..WHITE..") para obtener el Envío de mena refinada de Jordan. Te da la misión 'Envío de mena de Bailor'. Encuentras el Envío de mena de Jordan detrás de un árbol a "..YELLOW.."71,21"..WHITE.."\n\n3. Encuentras el Martillo de herrería de Jordan en "..YELLOW.."[Castillo de Colmillo Oscuro]"..WHITE.." en "..YELLOW.."[3]"..WHITE..".\n\n4. para obtener la Gema kor purificada habla con Thundris Tejevientos (Costa Oscura - Auberdine; "..YELLOW.."37,40"..WHITE..") y haga su misión 'La búsqueda de la gema Kor'. Para esta misión, tienes que matar Oráculos Brazanegras o Sacerdotisas de las mareas Brazanegras afuera de "..YELLOW.."[Cavernas de Brazanegra]"..WHITE..". Los despojas para obtener la Gema kor corrupta. Thundris Tejevientos la limpiará para ti.", };
+Inst1Quest6_Page = {2, "¡Esta misión está disponible solamente para paladines!\n\n1. Despoja a los Talladores de madera goblin en "..YELLOW.."[Las Minas de la Muerte]"..WHITE.." cerca de "..YELLOW.."[3]"..WHITE.." para obtener la Madera de roble de Piedrablanca.\n\n2. Habla con Bailor Petramano (Loch Modan - Thelsamar; "..YELLOW.."35,44"..WHITE..") para obtener el Envío de mena refinada de Jordan. Te da la misión 'Envío de mena de Bailor'. Encuentras el Envío de mena de Jordan detrás de un árbol a "..YELLOW.."71,21."..WHITE.."\n\n3. Encuentras el Martillo de herrería de Jordan en "..YELLOW.."[Castillo de Colmillo Oscuro]"..WHITE.." en "..YELLOW.."[3]"..WHITE..".\n\n4. para obtener la Gema kor purificada habla con Thundris Tejevientos (Costa Oscura - Auberdine; "..YELLOW.."37,40"..WHITE..") y haga su misión 'La búsqueda de la gema Kor'. Para esta misión, tienes que matar Oráculos Brazanegras o Sacerdotisas de las mareas Brazanegras afuera de "..YELLOW.."[Cavernas de Brazanegra]"..WHITE..". Los despojas para obtener la Gema kor corrupta. Thundris Tejevientos la limpiará para ti.", };
 Inst1Quest6_Prequest = "Escrito sobre valor -> La prueba de rectitud" -- 1651 -> 1653
 Inst1Quest6_Folgequest = "La prueba de rectitud" -- 1806
 --
@@ -805,6 +805,7 @@ Inst4Quest10_HORDE_Folgequest = Inst4Quest16_Folgequest
 
 --------------- INST5 - Blackrock Depths (BRD) ---------------
 Inst5Story = "Antaño la capital de los enanos Hierro Negro, este laberinto volcánico es ahora el centro de poder de Ragnaros el Señor de Fuego. Ragnaros ha descubierto el secreto de dar vida a la piedra y planea construir un ejército de gólems imparables para que le ayuden a conquistar toda la Montaña Roca Negra. Obsesionado con derrotar a Nefarian y a sus esbirros draconicos, Ragnaros hará lo que sea para obtener la victoria final."
+Inst5Caption = "Profundidades de Roca Negra"
 Inst5QAA = "17 Misiones"
 Inst5QAH = "17 Misiones"
 
@@ -1003,7 +1004,7 @@ Inst5Quest16 = "16. El reto" -- 9015
 Inst5Quest16_Level = "60"
 Inst5Quest16_Attain = "58"
 Inst5Quest16_Aim = "Dirígete al Círculo de la Ley en las Profundidades de Roca Negra y coloca el estandarte de Provocación en el centro cuando el Alto justiciero Pedrasiniestra pronuncie tu veredicto. Mata a Theldren y a sus gladiadores y regresa junto a Anthion Harmon en las Tierras de la Peste del Este con la primera pieza del amuleto de Lord Valthalak."
-Inst5Quest16_Location = "Falrin Tallarbol (La Masacre Oeste; "..YELLOW.."[1] Library"..WHITE..")"
+Inst5Quest16_Location = "Falrin Tallarbol (La Masacre Oeste; "..YELLOW.."[1] Librería"..WHITE..")"
 Inst5Quest16_Note = "La misión siguiente es diferente para cada clase."
 Inst5Quest16_Prequest = "El encantamiento del provocador" -- 8950
 Inst5Quest16_Folgequest = "(Misiones de Clase)"
@@ -1419,7 +1420,7 @@ Inst7Quest6_Level = "25"
 Inst7Quest6_Attain = "20"
 Inst7Quest6_Aim = "Encuentra 3 trozos de Soran'ruk y 1 trozo de Soran'ruk grande y llévaselos a Doan Karhan en Los Baldíos."
 Inst7Quest6_Location = "Doan Karhan (Los Baldíos; "..YELLOW.."49,57"..WHITE..")"
-Inst7Quest6_Note = "Solamente para Brujos: Consigues los 3 Trozos de Soran'ruk de los Acólitos Crepusculares en "..YELLOW.."[Cavernas de Brazanegra]"..WHITE..". Consigues el Trozo de Soran'ruk grande en "..YELLOW.."[Castillo de Colmillo Oscuro]"..WHITE.." de los Almanegras Colmillo Oscuro"
+Inst7Quest6_Note = "Solamente para Brujos: Consigues los 3 Trozos de Soran'ruk de los Acólitos Crepusculares en "..YELLOW.."[Cavernas de Brazanegra]"..WHITE..". Consigues el Trozo de Soran'ruk grande en "..YELLOW.."[Castillo de Colmillo Oscuro]"..WHITE.." de los Almanegras Colmillo Oscuro."
 Inst7Quest6_Prequest = "Ninguno"
 Inst7Quest6_Folgequest = "Ninguno"
 --
@@ -5346,8 +5347,8 @@ Inst30Quest4_Note = "Despoja a Hidromántica Velratha en "..YELLOW.."[6]"..WHITE
 Inst30Quest4_Prequest = "La tarea de Tabetha" -- 2861
 Inst30Quest4_Folgequest = "Ninguno"
 --
-Inst30Quest3name1 = "Vara de tramoyista de hechizos"
-Inst30Quest3name2 = "Espaldares de pizarra"
+Inst30Quest4name1 = "Vara de tramoyista de hechizos"
+Inst30Quest4name2 = "Espaldares de pizarra"
 
 --Quest 5 Alliance
 Inst30Quest5 = "5. La profecía de Mosh'aru" -- 3527
