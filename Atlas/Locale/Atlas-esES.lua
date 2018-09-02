@@ -458,7 +458,7 @@ AL:RegisterTranslations("esES", function() return {
 	["Key to the City"] = "Llave de la ciudad";
 	["Various Postbox Keys"] = "Varias llaves de los buzones";
 	["Living Side"] = "Lado vivo";
-	["Undead Side"] = "Lado no muerto";
+	["Undead Side"] = "Lado no-muerto";
 	["Stratholme Courier"] = "Mensajero de Stratholme";
 	["Fras Siabi"] = "Fras Siabi";
 	["Atiesh"] = "Atiesh";
