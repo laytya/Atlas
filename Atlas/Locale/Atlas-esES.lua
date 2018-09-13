@@ -215,10 +215,10 @@ AL:RegisterTranslations("esES", function() return {
 	["Tier 3 Sets"] = "Equipo Tier 3";
 	
 	--Instance names and acronyms
-	["Armory"] = "Armería"; 
+	["Armory"] = "Arsenal"; 
 	["Cathedral"] = "Catedral"; 
 	["Graveyard"] = "Cementerio"; 
-	["Library"] = "Librería";	
+	["Library"] = "Biblioteca";	
 	["Sunken Temple"] = "Templo Sumergido";
 		
 
