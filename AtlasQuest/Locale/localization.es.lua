@@ -238,7 +238,7 @@ Inst1Quest6_Attain = "20"
 Inst1Quest6_Aim = "Consulta la lista y llévale a Jordan Fontana de Forjaz lo siguiente: madera de roble de Piedrablanca, envío de oro refinado de Jordan, el martillo de herrero de Jordan y una gema Kor."
 Inst1Quest6_Location = "Jordan Fontana (Dun Morogh - Entrada de Forjaz; "..YELLOW.."52,36"..WHITE..")"
 Inst1Quest6_Note = "Solamente Paladín: Para ver la nota haz clic en "..YELLOW.."[Información de La prueba de rectitud]"..WHITE.."."
-Inst1Quest6_Page = {2, "¡Esta misión está disponible solamente para paladines!\n\n1. Despoja a los Talladores de madera goblin en "..YELLOW.."[Las Minas de la Muerte]"..WHITE.." cerca de "..YELLOW.."[3]"..WHITE.." para obtener la Madera de roble de Piedrablanca.\n\n2. Habla con Bailor Petramano (Loch Modan - Thelsamar; "..YELLOW.."35,44"..WHITE..") para obtener el Envío de mena refinada de Jordan. Te da la misión 'Envío de mena de Bailor'. Encuentras el Envío de mena de Jordan detrás de un árbol a "..YELLOW.."71,21."..WHITE.."\n\n3. Encuentras el Martillo de herrería de Jordan en "..YELLOW.."[Castillo de Colmillo Oscuro]"..WHITE.." en "..YELLOW.."[3]"..WHITE..".\n\n4. para obtener la Gema kor purificada habla con Thundris Tejevientos (Costa Oscura - Auberdine; "..YELLOW.."37,40"..WHITE..") y haga su misión 'La búsqueda de la gema Kor'. Para esta misión, tienes que matar Oráculos Brazanegras o Sacerdotisas de las mareas Brazanegras afuera de "..YELLOW.."[Cavernas de Brazanegra]"..WHITE..". Los despojas para obtener la Gema kor corrupta. Thundris Tejevientos la limpiará para ti.", };
+Inst1Quest6_Page = {2, "¡Esta misión está disponible solamente para paladines!\n\n1. Despoja a los Talladores de madera goblin en "..YELLOW.."[Las Minas de la Muerte]"..WHITE.." cerca de "..YELLOW.."[3]"..WHITE.." para obtener la Madera de roble de Piedrablanca.\n\n2. Habla con Bailor Petramano (Loch Modan - Thelsamar; "..YELLOW.."35,44"..WHITE..") para obtener el Envío de mena refinada de Jordan. Te da la misión 'Envío de mena de Bailor'. Encuentras el Envío de mena de Jordan detrás de un árbol a "..YELLOW.."71,21"..WHITE..".\n\n3. Encuentras el Martillo de herrería de Jordan en "..YELLOW.."[Castillo de Colmillo Oscuro]"..WHITE.." en "..YELLOW.."[3]"..WHITE..".\n\n4. Para obtener la Gema kor purificada habla con Thundris Tejevientos (Costa Oscura - Auberdine; "..YELLOW.."37,40"..WHITE..") y haga su misión 'La búsqueda de la gema Kor'. Para esta misión, tienes que matar a los Oráculos Brazanegras o Sacerdotisas de las mareas Brazanegras afuera de "..YELLOW.."[Cavernas de Brazanegra]"..WHITE..". Los despojas para obtener la Gema kor corrupta. Thundris Tejevientos la limpiará para ti.", };
 Inst1Quest6_Prequest = "Escrito sobre valor -> La prueba de rectitud" -- 1651 -> 1653
 Inst1Quest6_Folgequest = "La prueba de rectitud" -- 1806
 --
@@ -3636,7 +3636,7 @@ Inst18Quest5_HORDE_Folgequest = "(Ve la Note)"
 
 --------------- INST19 - SM: Library (SM Lib) ---------------
 Inst19Story = "El monasterio fue un orgulloso bastión del sacerdocio de Lordaeron, un centro de aprendizaje e iluminación. Con la llegada de la Peste no-muerta durante la Tercera Guerra, el pacífico Monasterio se convirtió en un bastión de la fanática Cruzada Escarlata. Los cruzados no toleran a ninguna de las razas no humanas, sin importarles su alianza o afiliación. Creen que cualquier extranjero es un portador potencial de la peste no-muerta, y por lo tanto debe ser destruido. Los informes indican que los aventureros que entran en el monasterio se ven obligados a enfrentarse al Comandante Escarlata Mograine que dirige una gran plaza fuerte de guerreros fanáticamente devotos. Sin embargo, la verdadera señora del monasterio es la Alta Inquisidora Melenablanca, una temible sacerdotisa que posee la facultad de resucitar a guerreros caídos para que luchen en su nombre."
-Inst19Caption = "Monasterio Escarlata: Librería"
+Inst19Caption = "Monasterio Escarlata: Biblioteca"
 Inst19QAA = "3 Misiones"
 Inst19QAH = "5 Misiones"
 
@@ -3646,7 +3646,7 @@ Inst19Quest1_Level = "40"
 Inst19Quest1_Attain = "34"
 Inst19Quest1_Aim = "Mata a la alta inquisidora Melenablanca, al Comandante Escarlata Mograine, a Herod, el Campeón Escarlata y al maestro de canes Loksey. A continuación, preséntate ante Raleigh el Devoto, en Costasur."
 Inst19Quest1_Location = "Raleigh el Devoto (Laderas de Trabalomas - Costasur; "..YELLOW.."51,58"..WHITE..")"
-Inst19Quest1_Note = "Esta cadena de misiones empieza con Hermano Cuerviz en Ventormenta - Catedral de Luz ("..YELLOW.."42,24"..WHITE..").\nEncuentras a la Alta inquisidora Melenablanca y al Comandante Escarlata Mograine en la "..YELLOW.."Catedral [2]"..WHITE..", a Herod en la "..YELLOW.."Armería [1]"..WHITE.." y al Maestro de Canes Loksey en la "..YELLOW.."Librería [1]"..WHITE.."."
+Inst19Quest1_Note = "Esta cadena de misiones empieza con Hermano Cuerviz en Ventormenta - Catedral de Luz ("..YELLOW.."42,24"..WHITE..").\nEncuentras a la Alta inquisidora Melenablanca y al Comandante Escarlata Mograine en la "..YELLOW.."Catedral [2]"..WHITE..", a Herod en el "..YELLOW.."Arsenal [1]"..WHITE.." y al Maestro de Canes Loksey en la "..YELLOW.."Biblioteca [1]"..WHITE.."."
 Inst19Quest1_Prequest = "Hermano Anton -> El sendero Escarlata" -- 6141 -> 1052
 Inst19Quest1_Folgequest = "Ninguno"
 --
@@ -3696,7 +3696,7 @@ Inst19Quest2_HORDE_Level = "42"
 Inst19Quest2_HORDE_Attain = "33"
 Inst19Quest2_HORDE_Aim = "Mata a la alta inquisidora Melenablanca, al comandante Escarlata Mograine, a Herod el Campeón Escarlata y al maestro de canes Loksey, y después ve a ver de nuevo a Varimathras a Entrañas."
 Inst19Quest2_HORDE_Location = "Varimathras (Entrañas - Barrio Real; "..YELLOW.."56,92"..WHITE..")"
-Inst19Quest2_HORDE_Note = "Encuentras a la Alta inquisidora Melenablanca y al Comandante Escarlata Mograine en la "..YELLOW.."Catedral [2]"..WHITE..", Herod en la "..YELLOW.."Armería [1]"..WHITE.." y al Maestro de Canes Loksey en la "..YELLOW.."Librería [1]"..WHITE.."."
+Inst19Quest2_HORDE_Note = "Encuentras a la Alta inquisidora Melenablanca y al Comandante Escarlata Mograine en la "..YELLOW.."Catedral [2]"..WHITE..", Herod en el "..YELLOW.."Arsenal [1]"..WHITE.." y al Maestro de Canes Loksey en la "..YELLOW.."Biblioteca [1]"..WHITE.."."
 Inst19Quest2_HORDE_Prequest = "Ninguno"
 Inst19Quest2_HORDE_Folgequest = "Ninguno"
 --
@@ -3710,7 +3710,7 @@ Inst19Quest3_HORDE_Level = "38"
 Inst19Quest3_HORDE_Attain = "28"
 Inst19Quest3_HORDE_Aim = "Recupera el Compendio de los Caídos del Monasterio que se encuentra en los Claros de Tirisfal y regresa ante Sabio Buscador de la Verdad, que está en Cima del Trueno."
 Inst19Quest3_HORDE_Location = "Sabio Buscador de la Verdad (Cima del Trueno; "..YELLOW.."34,47"..WHITE..")"
-Inst19Quest3_HORDE_Note = "Encuentras el libro en la Librería del Monasterio Escarlata."
+Inst19Quest3_HORDE_Note = "Encuentras el libro en la Biblioteca del Monasterio Escarlata."
 Inst19Quest3_HORDE_Prequest = "Ninguno"
 Inst19Quest3_HORDE_Folgequest = "Ninguno"
 --
@@ -3724,7 +3724,7 @@ Inst19Quest4_HORDE_Level = "36"
 Inst19Quest4_HORDE_Attain = "25"
 Inst19Quest4_HORDE_Aim = "Encuentra el libro Comienzos de la amenaza de los no-muertos y devuélveselo a Parqual Fintallas, que está en Entrañas."
 Inst19Quest4_HORDE_Location = "Parqual Fintallas (Entrañas - El Apothecarium; "..YELLOW.."57,65"..WHITE..")"
-Inst19Quest4_HORDE_Note = "La cadena de misiones empieza con Dorn Acechallanos (Las Mil Agujas; "..YELLOW.."53,41"..WHITE.."). Encuentras el libro en la Librería del Monasterio Escarlata."
+Inst19Quest4_HORDE_Note = "La cadena de misiones empieza con Dorn Acechallanos (Las Mil Agujas; "..YELLOW.."53,41"..WHITE.."). Encuentras el libro en la Biblioteca del Monasterio Escarlata."
 Inst19Quest4_HORDE_Prequest = "Prueba de fe - > Prueba de conocimiento" -- 1149 -> 1159
 Inst19Quest4_HORDE_Folgequest = "Prueba de conocimiento" -- 6628
 -- No Rewards for this quest
@@ -3744,7 +3744,7 @@ Inst19Quest5_HORDE_Folgequest = Inst19Quest3_Folgequest
 
 --------------- INST20 - SM: Armory (SM Arm) ---------------
 Inst20Story = Inst19Story
-Inst20Caption = "Monasterio Escarlata: Armería"
+Inst20Caption = "Monasterio Escarlata: Arsenal"
 Inst20QAA = "1 Misión"
 Inst20QAH = "2 Misiones"
 
@@ -4166,7 +4166,7 @@ Inst24Quest2_Level = "25"
 Inst24Quest2_Attain = "20"
 Inst24Quest2_Aim = "Encuentra 3 trozos de Soran'ruk y 1 trozo de Soran'ruk grande y llévaselos a Doan Karhan en Los Baldíos."
 Inst24Quest2_Location = "Doan Karhan (Los Baldíos; "..YELLOW.."49,57"..WHITE..")"
-Inst24Quest2_Note = "Solamente para Brujos: Consigues los 3 Trozos de Soran'ruk de los Acólitos Crepusculares en "..YELLOW.."[Cavernas de Brazanegra]"..WHITE..". Consigues el Trozo de Soran'ruk grande en "..YELLOW.."[Castillo de Colmillo Oscuro]"..WHITE.." de los Almanegras Colmillo Oscuro"
+Inst24Quest2_Note = "Solamente para Brujos: Consigues los 3 Trozos de Soran'ruk de los Acólitos Crepusculares en "..YELLOW.."[Cavernas de Brazanegra]"..WHITE..". Consigues el Trozo de Soran'ruk grande en "..YELLOW.."[Castillo de Colmillo Oscuro]"..WHITE.." de los Almanegras Colmillo Oscuro."
 Inst24Quest2_Prequest = "Ninguno"
 Inst24Quest2_Folgequest = "Ninguno"
 --
@@ -5857,7 +5857,7 @@ Inst34Quest2_Level = "60"
 Inst34Quest2_Attain = "60"
 Inst34Quest2_Aim = "Entrega el libro de contabilidad mágico de Azuregos a Narain Sabelotodo de Tanaris."
 Inst34Quest2_Location = "Espíritu de Azuregos (Azshara; "..YELLOW.."56,83"..WHITE..")"
-Inst34Quest2_Note = "Encuentras a Narain Sabelotodo en Tanaris en "..YELLOW.."65.17"..WHITE.."."
+Inst34Quest2_Note = "Encuentras a Narain Sabelotodo en Tanaris en "..YELLOW.."65,17"..WHITE.."."
 Inst34Quest2_Prequest = "Encomienda a los Vuelos" -- 8555
 Inst34Quest2_Folgequest = "La traducción del libro de contabilidad" -- 8576
 -- No Rewards for this quest
