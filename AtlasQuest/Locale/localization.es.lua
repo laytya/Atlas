@@ -487,7 +487,7 @@ Inst3Quest5_HORDE_Folgequest = "Ninguno"
 
 
 --------------- INST4 - Uldaman (Ulda) ---------------
-Inst4Story = "Uldaman es una antigua bóveda de los titanes que ha estado enterrada en las profundidades de la tierra desde la creación del mundo. Recientes excavaciones enanas han alcanzado esta ciudad olvidada, liberando la primera creación fallida de los titanes: los troggs. Las leyendas cuentan que los titanes crearon a los troggs a partir de la piedra. Cuando se percataron del fracaso de su experimento, los titanes encerraron a los troggs y lo intentaron de nuevo creando la raza de los enanos. Los secretos de la creación de los enanos están registrados en los legendarios Discos de Norgannon: enormes artefactos de los titanes que yacen en las profundidades de la antigua ciudad. Recientemente, los enanos Hierro Negro han comenzado una serie de incursiones en Uldaman con las esperanzas de reclamar los discos para su ardiente señor, Ragnaros. Sin embargo, varios guardianes protegen la ciudad: gigantes constructos de piedra viva que aplastan a cualquier intruso que encuentran. Los Discos están protegidos por un enorme Stonekeeper llamado Archaedas. Hay incluso rumores que sugieren que los antepasados de piel de piedra de los enanos, los terráneos, todavía habitan en las profundidades de la ciudad."
+Inst4Story = "Uldaman es una antigua bóveda de los titanes que ha estado enterrada en las profundidades de la tierra desde la creación del mundo. Recientes excavaciones enanas han alcanzado esta ciudad olvidada, liberando la primera creación fallida de los titanes: los troggs. Las leyendas cuentan que los titanes crearon a los troggs a partir de la piedra. Cuando se percataron del fracaso de su experimento, los titanes encerraron a los troggs y lo intentaron de nuevo creando la raza de los enanos. Los secretos de la creación de los enanos están registrados en los legendarios Discos de Norgannon: enormes artefactos de los titanes que yacen en las profundidades de la antigua ciudad. Recientemente, los enanos Hierro Negro han comenzado una serie de incursiones en Uldaman con las esperanzas de reclamar los discos para su ardiente señor, Ragnaros. Sin embargo, varios guardianes protegen la ciudad: gigantes constructos de piedra viva que aplastan a cualquier intruso que encuentran. Los Discos están protegidos por un enorme Vigía de piedra llamado Archaedas. Hay incluso rumores que sugieren que los antepasados de piel de piedra de los enanos, los terráneos, todavía habitan en las profundidades de la ciudad."
 Inst4Caption = "Uldaman"
 Inst4QAA = "16 Misiones"
 Inst4QAH = "10 Misiones"
@@ -3185,7 +3185,7 @@ Inst14Quest7name1_HORDE = Inst14Quest7name1
 
 
 --------------- INST15 - Naxxramas (Naxx) ---------------
-Inst15Story = "Flotando sobre las Tierras de la Peste, la necrópolis de Naxxramas sirve de residencia a uno de los oficiales más poderosos del Rey Exánime, la terrible Kel'Thuzad. Horrores del pasado y desgracias por conocer se concentran en la necrópolis mientras los los servidores del Rey Exánime preparan su asalto. La Plaga marcha de nuevo..."
+Inst15Story = "Flotando sobre las Tierras de la Peste, la necrópolis de Naxxramas sirve de residencia a uno de los oficiales más poderosos del Rey Exánime, la terrible Kel'Thuzad. Horrores del pasado y desgracias por conocer se concentran en la necrópolis mientras los servidores del Rey Exánime preparan su asalto. La Plaga marcha de nuevo..."
 Inst15Caption = "Naxxramas"
 Inst15QAA = "5 Misiones"
 Inst15QAH = "5 Misiones"
