@@ -1,6 +1,7 @@
 ## Interface: 20400
 ## Title: FuBar - |cffffffffAtlas|r|cff00ff00Fu|r
 ## Notes: Adds an Atlas button to FuBar.
+## Notes-esES: Añade un botón Atlas a FuBar.
 ## Version 1.2
 ## Dependencies: Atlas, FuBar
 ## Author: Steve Dodds, laytya
@@ -12,5 +13,6 @@ embeds.xml
 
 AtlasFuLocale-enUS.lua
 AtlasFuLocale-ruRU.lua
+AtlasFuLocale-esES.lua
 AtlasFu.lua
 

@@ -48,7 +48,7 @@ AL:RegisterTranslations("esES", function() return {
 	["Hide AtlasLoot Panel"] = "Ocultar panel de AtlasLoot";
 	["Show Minimap Button"] = "Mostrar botón en el minimapa";
 	["Suppress text spam when querying items"] = "Suprimir texto de spam al preguntar por objetos";
-	["Done"] = "Hecho";
+	["Done"] = "Aceptar";
 	["WishList"] = "Lista deseada";
 	["Search Result: %s"] = "Buscar resultado: %s";
 	["Last Result"] = "Último resultado";
@@ -59,8 +59,8 @@ AL:RegisterTranslations("esES", function() return {
 	["on this page. The items will be"] = "de esta página. Los objetos serán";
 	["refreshed when you next mouse"] = "refrescados al pasar el ratón";
 	["over them."] = "sobre ellos";
-	["Default settings applied!"] = "¡Configuración por defecto aplicada!";
-	["Default Settings"] = "Configuración por defecto";
+	["Default settings applied!"] = "¡Configuración predeterminada aplicada!";
+	["Default Settings"] = "Configuración Predeterminada";
 	["AtlasLoot Error!"] = "¡Error de Atlasloot!";
 	["To cast "] = "Para lanzar ";
 	[" the following items are needed:"] = "los siguientes objetos son necesarios:";
@@ -380,9 +380,9 @@ AL:RegisterTranslations("esES", function() return {
 	["Avalanchion"] = "Avalanchion";
 	["The Windreaver"] = "El Atracavientos";
 	["Graveyard"] = "Cementerio";
-	["Armory"] = "Armería";
+	["Armory"] = "Arsenal";
 	["Cathedral"] = "Catedral";
-	["Library"] = "Librería";
+	["Library"] = "Biblioteca";
 	["Spirit of Azuregos"] = "Espirítu de Azuregos";
 	["Apprentice"] = "Aprendiz";
 	["Journeyman"] = "Oficial";

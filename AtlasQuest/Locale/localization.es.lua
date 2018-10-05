@@ -48,7 +48,7 @@ local YELLOW = "|cffFFd200";   -- Ingame Yellow
 AQHelpText = "escribir /aq o atlasquest "..WHITE.."[comando]"..YELLOW.."\ncomandos: ayuda; opcion/config; mostrar/ocultar; izquierdo/derecho; color; auto-mostrar"..RED.."(solamente Atlas)"
 --
 AQOptionsCaptionTEXT = "Opciones de AtlasQuest";
-AQ_OK = "Hecho"
+AQ_OK = "Aceptar"
 
 -- Autoshow
 AQOptionsAutoshowTEXT = "Mostrar el panel de AtlasQuest con Atlas.";
@@ -171,7 +171,7 @@ Inst1Quest1_Level = "17"
 Inst1Quest1_Attain = "14"
 Inst1Quest1_Aim = "La exploradora Riell de la Colina del Centinela quiere que le lleves 10 pañuelos de seda roja."
 Inst1Quest1_Location = "Exploradora Riell (Páramos de Poniente - Colina del Centinela; "..YELLOW.."56, 47"..WHITE..")"
-Inst1Quest1_Note = "Puedes conseguir los Pañuelos rojos de seda por despojar a los mineros dentro de Las Minas de la Muerte o afuera de la instancia. La misión estará disponible después de que termines la cadena de misiones La hermandad de los Defias hasta la parte para matar Edwin VanCleef."
+Inst1Quest1_Note = "Puedes conseguir los Pañuelos rojos de seda por despojar a los mineros dentro de Las Minas de la Muerte o afuera de la instancia. La misión estará disponible después de que termines la cadena de misiones La hermandad de los Defias hasta la misión para matar Edwin VanCleef."
 Inst1Quest1_Prequest = "La hermandad de los Defias (id = 155)" -- 155
 Inst1Quest1_Folgequest = "Ninguno"
 --
@@ -184,7 +184,7 @@ Inst1Quest2 = "2. Recolección de recuerdos" -- 168
 Inst1Quest2_Level = "18"
 Inst1Quest2_Attain = "14"
 Inst1Quest2_Aim = "Recupera 4 Tarjetas del Sindicato Minero y llévaselas a Wilder Cardortiga, en Ventormenta."
-Inst1Quest2_Location = "Wilder Cardortiga (Ventormenta - Distrito de los Enanos; "..YELLOW.."65, 21"..WHITE..")"
+Inst1Quest2_Location = "Wilder Cardortiga (Ventormenta - Distrito de los Enanos; "..YELLOW.."65,21"..WHITE..")"
 Inst1Quest2_Note = "Despoja a los No-muertos afuera de la instancia en la localización cerca de "..YELLOW.."[3]"..WHITE.." en el mapa de la Entrada para obtener las tarjetas."
 Inst1Quest2_Prequest = "Ninguno"
 Inst1Quest2_Folgequest = "Ninguno"
@@ -238,7 +238,7 @@ Inst1Quest6_Attain = "20"
 Inst1Quest6_Aim = "Consulta la lista y llévale a Jordan Fontana de Forjaz lo siguiente: madera de roble de Piedrablanca, envío de oro refinado de Jordan, el martillo de herrero de Jordan y una gema Kor."
 Inst1Quest6_Location = "Jordan Fontana (Dun Morogh - Entrada de Forjaz; "..YELLOW.."52,36"..WHITE..")"
 Inst1Quest6_Note = "Solamente Paladín: Para ver la nota haz clic en "..YELLOW.."[Información de La prueba de rectitud]"..WHITE.."."
-Inst1Quest6_Page = {2, "¡Esta misión está disponible solamente para paladines!\n\n1. Despoja a los Talladores de madera goblin en "..YELLOW.."[Las Minas de la Muerte]"..WHITE.." cerca de "..YELLOW.."[3]"..WHITE.." para obtener la Madera de roble de Piedrablanca.\n\n2. Habla con Bailor Petramano (Loch Modan - Thelsamar; "..YELLOW.."35,44"..WHITE..") para obtener el Envío de mena refinada de Jordan. Te da la misión 'Envío de mena de Bailor'. Encuentras el Envío de mena de Jordan detrás de un árbol a "..YELLOW.."71,21"..WHITE.."\n\n3. Encuentras el Martillo de herrería de Jordan en "..YELLOW.."[Castillo de Colmillo Oscuro]"..WHITE.." en "..YELLOW.."[3]"..WHITE..".\n\n4. para obtener la Gema kor purificada habla con Thundris Tejevientos (Costa Oscura - Auberdine; "..YELLOW.."37,40"..WHITE..") y haga su misión 'La búsqueda de la gema Kor'. Para esta misión, tienes que matar Oráculos Brazanegras o Sacerdotisas de las mareas Brazanegras afuera de "..YELLOW.."[Cavernas de Brazanegra]"..WHITE..". Los despojas para obtener la Gema kor corrupta. Thundris Tejevientos la limpiará para ti.", };
+Inst1Quest6_Page = {2, "¡Esta misión está disponible solamente para paladines!\n\n1. Despoja a los Talladores de madera goblin en "..YELLOW.."[Las Minas de la Muerte]"..WHITE.." cerca de "..YELLOW.."[3]"..WHITE.." para obtener la Madera de roble de Piedrablanca.\n\n2. Habla con Bailor Petramano (Loch Modan - Thelsamar; "..YELLOW.."35,44"..WHITE..") para obtener el Envío de mena refinada de Jordan. Te da la misión 'Envío de mena de Bailor'. Encuentras el Envío de mena de Jordan detrás de un árbol a "..YELLOW.."71,21"..WHITE..".\n\n3. Encuentras el Martillo de herrería de Jordan en "..YELLOW.."[Castillo de Colmillo Oscuro]"..WHITE.." en "..YELLOW.."[3]"..WHITE..".\n\n4. Para obtener la Gema kor purificada habla con Thundris Tejevientos (Costa Oscura - Auberdine; "..YELLOW.."37,40"..WHITE..") y haga su misión 'La búsqueda de la gema Kor'. Para esta misión, tienes que matar a los Oráculos Brazanegras o Sacerdotisas de las mareas Brazanegras afuera de "..YELLOW.."[Cavernas de Brazanegra]"..WHITE..". Los despojas para obtener la Gema kor corrupta. Thundris Tejevientos la limpiará para ti.", };
 Inst1Quest6_Prequest = "Escrito sobre valor -> La prueba de rectitud" -- 1651 -> 1653
 Inst1Quest6_Folgequest = "La prueba de rectitud" -- 1806
 --
@@ -415,7 +415,7 @@ Inst2Quest7name2_HORDE = Inst2Quest5name2
 
 
 --------------- INST3 - Ragefire Chasm (RFC) ---------------
-Inst3Story = "La Sima Ígnea es una red de cavernas volcánicas que se encuentran bajo la nueva capital de los orcos de Orgrimmar. Recientemente ha habido rumores sobre un culto leal al demoníaco Consejo de la Sombra que se ha trasladado a las ardientes profundidades de la Sima. Este culto, conocido como el Filo Ardiente, amenaza la propia soberanía de Durotar. Muchos creen que el Jefe de Guerra orco Thrall es consciente de la existencia del Filo y ha decidido no destruirlo con la esperanza de que sus miembros le lleven directamente al Consejo de la Sombra. De cualquier forma, los poderes oscuros que surgen de la Sima Ígnea podrían acabar con todo lo que los orcos han logrado"
+Inst3Story = "La Sima Ígnea es una red de cavernas volcánicas que se encuentran bajo la nueva capital de los orcos de Orgrimmar. Recientemente ha habido rumores sobre un culto leal al demoníaco Consejo de la Sombra que se ha trasladado a las ardientes profundidades de la Sima. Este culto, conocido como el Filo Ardiente, amenaza la propia soberanía de Durotar. Muchos creen que el Jefe de Guerra orco Thrall es consciente de la existencia del Filo y ha decidido no destruirlo con la esperanza de que sus miembros le lleven directamente al Consejo de la Sombra. De cualquier forma, los poderes oscuros que surgen de la Sima Ígnea podrían acabar con todo lo que los orcos han logrado."
 Inst3Caption = "Sima Ígnea"
 Inst3QAA = "No Hay Misiones"
 Inst3QAH = "5 Misiones"
@@ -487,7 +487,7 @@ Inst3Quest5_HORDE_Folgequest = "Ninguno"
 
 
 --------------- INST4 - Uldaman (Ulda) ---------------
-Inst4Story = "Uldaman es una antigua bóveda de los titanes que ha estado enterrada en las profundidades de la tierra desde la creación del mundo. Recientes excavaciones enanas han alcanzado esta ciudad olvidada, liberando la primera creación fallida de los titanes: los troggs. Las leyendas cuentan que los titanes crearon a los troggs a partir de la piedra. Cuando se percataron del fracaso de su experimento, los titanes encerraron a los troggs y lo intentaron de nuevo creando la raza de los enanos. Los secretos de la creación de los enanos están registrados en los legendarios Discos de Norgannon: enormes artefactos de los titanes que yacen en las profundidades de la antigua ciudad. Recientemente, los enanos Hierro Negro han comenzado una serie de incursiones en Uldaman con las esperanzas de reclamar los discos para su ardiente señor, Ragnaros. Sin embargo, varios guardianes protegen la ciudad: gigantes constructos de piedra viva que aplastan a cualquier intruso que encuentran. Los Discos están protegidos por un enorme Stonekeeper llamado Archaedas. Hay incluso rumores que sugieren que los antepasados de piel de piedra de los enanos, los terráneos, todavía habitan en las profundidades de la ciudad."
+Inst4Story = "Uldaman es una antigua bóveda de los titanes que ha estado enterrada en las profundidades de la tierra desde la creación del mundo. Recientes excavaciones enanas han alcanzado esta ciudad olvidada, liberando la primera creación fallida de los titanes: los troggs. Las leyendas cuentan que los titanes crearon a los troggs a partir de la piedra. Cuando se percataron del fracaso de su experimento, los titanes encerraron a los troggs y lo intentaron de nuevo creando la raza de los enanos. Los secretos de la creación de los enanos están registrados en los legendarios Discos de Norgannon: enormes artefactos de los titanes que yacen en las profundidades de la antigua ciudad. Recientemente, los enanos Hierro Negro han comenzado una serie de incursiones en Uldaman con las esperanzas de reclamar los discos para su ardiente señor, Ragnaros. Sin embargo, varios guardianes protegen la ciudad: gigantes constructos de piedra viva que aplastan a cualquier intruso que encuentran. Los Discos están protegidos por un enorme Vigía de piedra llamado Archaedas. Hay incluso rumores que sugieren que los antepasados de piel de piedra de los enanos, los terráneos, todavía habitan en las profundidades de la ciudad."
 Inst4Caption = "Uldaman"
 Inst4QAA = "16 Misiones"
 Inst4QAH = "10 Misiones"
@@ -804,7 +804,8 @@ Inst4Quest10_HORDE_Folgequest = Inst4Quest16_Folgequest
 
 
 --------------- INST5 - Blackrock Depths (BRD) ---------------
-Inst5Story = "Antaño la capital de los enanos Hierro Negro, este laberinto volcánico es ahora el centro de poder de Ragnaros el Señor de Fuego. Ragnaros ha descubierto el secreto de dar vida a la piedra y planea construir un ejército de gólems imparables para que le ayuden a conquistar toda la Montaña Roca Negra. Obsesionado con derrotar a Nefarian y a sus esbirros draconicos, Ragnaros hará lo que sea para obtener la victoria final."
+Inst5Story = "Antaño la capital de los enanos Hierro Negro, este laberinto volcánico es ahora el centro de poder de Ragnaros el Señor de Fuego. Ragnaros ha descubierto el secreto de dar vida a la piedra y planea construir un ejército de gólems imparables para que le ayuden a conquistar toda la Montaña Roca Negra. Obsesionado con derrotar a Nefarian y a sus esbirros dracónicos, Ragnaros hará lo que sea para obtener la victoria final."
+Inst5Caption = "Profundidades de Roca Negra"
 Inst5QAA = "17 Misiones"
 Inst5QAH = "17 Misiones"
 
@@ -1003,7 +1004,7 @@ Inst5Quest16 = "16. El reto" -- 9015
 Inst5Quest16_Level = "60"
 Inst5Quest16_Attain = "58"
 Inst5Quest16_Aim = "Dirígete al Círculo de la Ley en las Profundidades de Roca Negra y coloca el estandarte de Provocación en el centro cuando el Alto justiciero Pedrasiniestra pronuncie tu veredicto. Mata a Theldren y a sus gladiadores y regresa junto a Anthion Harmon en las Tierras de la Peste del Este con la primera pieza del amuleto de Lord Valthalak."
-Inst5Quest16_Location = "Falrin Tallarbol (La Masacre Oeste; "..YELLOW.."[1] Library"..WHITE..")"
+Inst5Quest16_Location = "Falrin Tallarbol (La Masacre Oeste; "..YELLOW.."[1] Librería"..WHITE..")"
 Inst5Quest16_Note = "La misión siguiente es diferente para cada clase."
 Inst5Quest16_Prequest = "El encantamiento del provocador" -- 8950
 Inst5Quest16_Folgequest = "(Misiones de Clase)"
@@ -1419,7 +1420,7 @@ Inst7Quest6_Level = "25"
 Inst7Quest6_Attain = "20"
 Inst7Quest6_Aim = "Encuentra 3 trozos de Soran'ruk y 1 trozo de Soran'ruk grande y llévaselos a Doan Karhan en Los Baldíos."
 Inst7Quest6_Location = "Doan Karhan (Los Baldíos; "..YELLOW.."49,57"..WHITE..")"
-Inst7Quest6_Note = "Solamente para Brujos: Consigues los 3 Trozos de Soran'ruk de los Acólitos Crepusculares en "..YELLOW.."[Cavernas de Brazanegra]"..WHITE..". Consigues el Trozo de Soran'ruk grande en "..YELLOW.."[Castillo de Colmillo Oscuro]"..WHITE.." de los Almanegras Colmillo Oscuro"
+Inst7Quest6_Note = "Solamente para Brujos: Consigues los 3 Trozos de Soran'ruk de los Acólitos Crepusculares en "..YELLOW.."[Cavernas de Brazanegra]"..WHITE..". Consigues el Trozo de Soran'ruk grande en "..YELLOW.."[Castillo de Colmillo Oscuro]"..WHITE.." de los Almanegras Colmillo Oscuro."
 Inst7Quest6_Prequest = "Ninguno"
 Inst7Quest6_Folgequest = "Ninguno"
 --
@@ -1491,7 +1492,7 @@ Inst7Quest5name2_HORDE = Inst7Quest6name2
 
 
 --------------- INST8 - Cumbre de Roca Negra Inferior (LBRS) ---------------
-Inst8Story = "La poderosa fortaleza tallada en las entrañas de la Montaña Roca Negra fue diseñada por el maestro arquitecto enano, Franclorn Forjador. Pensada como el símbolo del poder de Hierro Negro, la fortaleza estuvo controlada por los siniestros enanos durante siglos. Sin embargo, Nefarian, el astuto hijo del dragón, Alamuerte, tenía otros planes para la grandiosa fortaleza. Él y sus esbirros dracónicos tomaron el control de la Cumbre y lucharon por el control de las posesiones enanas en las profundidades volcánicas de la montaña. Al darse cuenta de que los enanos estaban liderados por el poderoso elemental de fuego, Ragnaros, Nefarian juró que aplastaría a sus enemigos y reclamaría toda la montaña Roca Negra para si mismo."
+Inst8Story = "La poderosa fortaleza tallada en las entrañas de la Montaña Roca Negra fue diseñada por el maestro arquitecto enano, Franclorn Forjador. Pensada como el símbolo del poder de Hierro Negro, la fortaleza estuvo controlada por los siniestros enanos durante siglos. Sin embargo, Nefarian, el astuto hijo del dragón Alamuerte, tenía otros planes para la grandiosa fortaleza. Él y sus esbirros dracónicos tomaron el control de la Cumbre y lucharon por el control de las posesiones enanas en las profundidades volcánicas de la montaña. Al darse cuenta de que los enanos estaban liderados por el poderoso elemental de fuego, Ragnaros, Nefarian juró que aplastaría a sus enemigos y reclamaría toda la montaña Roca Negra para si mismo."
 Inst8Caption = "Cumbre de Roca Negra Inferior"
 Inst8QAA = "14 Misiones"
 Inst8QAH = "14 Misiones"
@@ -3184,7 +3185,7 @@ Inst14Quest7name1_HORDE = Inst14Quest7name1
 
 
 --------------- INST15 - Naxxramas (Naxx) ---------------
-Inst15Story = "Flotando sobre las Tierras de la Peste, la necrópolis de Naxxramas sirve de residencia a uno de los oficiales más poderosos del Rey Exánime, la terrible Kel'Thuzad. Horrores del pasado y desgracias por conocer se concentran en la necrópolis mientras los los servidores del Rey Exánime preparan su asalto. La Plaga marcha de nuevo..."
+Inst15Story = "Flotando sobre las Tierras de la Peste, la necrópolis de Naxxramas sirve de residencia a uno de los oficiales más poderosos del Rey Exánime, la terrible Kel'Thuzad. Horrores del pasado y desgracias por conocer se concentran en la necrópolis mientras los servidores del Rey Exánime preparan su asalto. La Plaga marcha de nuevo..."
 Inst15Caption = "Naxxramas"
 Inst15QAA = "5 Misiones"
 Inst15QAH = "5 Misiones"
@@ -3403,7 +3404,7 @@ Inst16Quest3name1_HORDE = Inst16Quest3name1
 
 
 --------------- INST17 - Razorfen Downs (RFD) ---------------
-Inst17Story = "Creada con las mismas enredaderas que Horado Rajacieno, Zahúrda Rajacieno es la capital tradicional de la raza jabaespín. El retorcido laberinto de espinas es el hogar de todo un ejército de leales jabaespines y sus sumos sacerdotes: la tribu Death's Head. Pero recientemente, una sombra amenazante ha caído sobre la caverna. Agentes de la Plaga no-muerta, liderados por el exánime Amnennar el Gélido, se han hecho con el control de la raza de los jabaespines y han transformado el laberinto de espinas en un bastión del poder no-muerto. Ahora los jabaespines luchan una batalla desesperada para recuperar su amada ciudad antes de que Amnennar extienda su control por Los Baldíos."
+Inst17Story = "Creada con las mismas enredaderas que Horado Rajacieno, Zahúrda Rajacieno es la capital tradicional de la raza jabaespín. El retorcido laberinto de espinas es el hogar de todo un ejército de leales jabaespines y sus sumos sacerdotes: la tribu Caramuerte. Pero recientemente, una sombra amenazante ha caído sobre la caverna. Agentes de la Plaga no-muerta, liderados por el exánime Amnennar el Gélido, se han hecho con el control de la raza de los jabaespines y han transformado el laberinto de espinas en un bastión del poder no-muerto. Ahora los jabaespines luchan una batalla desesperada para recuperar su amada ciudad antes de que Amnennar extienda su control por Los Baldíos."
 Inst17Caption = "Zahúrda Rajacieno"
 Inst17QAA = "3 Misiones"
 Inst17QAH = "4 Misiones"
@@ -3634,8 +3635,8 @@ Inst18Quest5_HORDE_Folgequest = "(Ve la Note)"
 
 
 --------------- INST19 - SM: Library (SM Lib) ---------------
-Inst19Story = "El monasterio fue un orgulloso bastión del sacerdocio de Lordaeron, un centro de aprendizaje e iluminación. Con la llegada de la Peste no-muerta durante la Tercera Guerra, el pacífico Monasterio se convirtió en un bastión de la fanática Cruzada Escarlata. Los cruzados no toleran a ninguna de las razas no humanas, sin importarles su alianza o afiliación. Creen que cualquier extranjero es un portador potencial de la peste no-muerta, y por lo tanto debe ser destruido. Los informes indican que los aventureros que entran en el monasterio se ven obligados a enfrentarse al Comandante Escarlata Mograine que dirige una gran plaza fuerte de guerreros fanáticamente devotos. Sin embargo, la verdadera señora del monasterio es la Alta Inquisidora Melenablanca, una temible sacerdotisa que posee la facultad de resucitar a guerreros caídos para que luchen en su nombre."
-Inst19Caption = "Monasterio Escarlata: Librería"
+Inst19Story = "El monasterio fue un orgulloso bastión del sacerdocio de Lordaeron, un centro de aprendizaje e iluminación. Con la llegada de la peste no-muerta durante la Tercera Guerra, el pacífico Monasterio se convirtió en un bastión de la fanática Cruzada Escarlata. Los cruzados no toleran a ninguna de las razas no humanas, sin importarles su alianza o afiliación. Creen que cualquier extranjero es un portador potencial de la peste no-muerta, y por lo tanto debe ser destruido. Los informes indican que los aventureros que entran en el monasterio se ven obligados a enfrentarse al Comandante Escarlata Mograine que dirige una gran plaza fuerte de guerreros fanáticamente devotos. Sin embargo, la verdadera señora del monasterio es la Alta inquisidora Melenablanca, una temible sacerdotisa que posee la facultad de resucitar a guerreros caídos para que luchen en su nombre."
+Inst19Caption = "Monasterio Escarlata: Biblioteca"
 Inst19QAA = "3 Misiones"
 Inst19QAH = "5 Misiones"
 
@@ -3645,7 +3646,7 @@ Inst19Quest1_Level = "40"
 Inst19Quest1_Attain = "34"
 Inst19Quest1_Aim = "Mata a la alta inquisidora Melenablanca, al Comandante Escarlata Mograine, a Herod, el Campeón Escarlata y al maestro de canes Loksey. A continuación, preséntate ante Raleigh el Devoto, en Costasur."
 Inst19Quest1_Location = "Raleigh el Devoto (Laderas de Trabalomas - Costasur; "..YELLOW.."51,58"..WHITE..")"
-Inst19Quest1_Note = "Esta cadena de misiones empieza con Hermano Cuerviz en Ventormenta - Catedral de Luz ("..YELLOW.."42,24"..WHITE..").\nEncuentras a la Alta inquisidora Melenablanca y al Comandante Escarlata Mograine en la "..YELLOW.."Catedral [2]"..WHITE..", a Herod en la "..YELLOW.."Armería [1]"..WHITE.." y al Maestro de Canes Loksey en la "..YELLOW.."Librería [1]"..WHITE.."."
+Inst19Quest1_Note = "Esta cadena de misiones empieza con Hermano Cuerviz en Ventormenta - Catedral de Luz ("..YELLOW.."42,24"..WHITE..").\nEncuentras a la Alta inquisidora Melenablanca y al Comandante Escarlata Mograine en la "..YELLOW.."Catedral [2]"..WHITE..", a Herod en el "..YELLOW.."Arsenal [1]"..WHITE.." y al Maestro de Canes Loksey en la "..YELLOW.."Biblioteca [1]"..WHITE.."."
 Inst19Quest1_Prequest = "Hermano Anton -> El sendero Escarlata" -- 6141 -> 1052
 Inst19Quest1_Folgequest = "Ninguno"
 --
@@ -3695,7 +3696,7 @@ Inst19Quest2_HORDE_Level = "42"
 Inst19Quest2_HORDE_Attain = "33"
 Inst19Quest2_HORDE_Aim = "Mata a la alta inquisidora Melenablanca, al comandante Escarlata Mograine, a Herod el Campeón Escarlata y al maestro de canes Loksey, y después ve a ver de nuevo a Varimathras a Entrañas."
 Inst19Quest2_HORDE_Location = "Varimathras (Entrañas - Barrio Real; "..YELLOW.."56,92"..WHITE..")"
-Inst19Quest2_HORDE_Note = "Encuentras a la Alta inquisidora Melenablanca y al Comandante Escarlata Mograine en la "..YELLOW.."Catedral [2]"..WHITE..", Herod en la "..YELLOW.."Armería [1]"..WHITE.." y al Maestro de Canes Loksey en la "..YELLOW.."Librería [1]"..WHITE.."."
+Inst19Quest2_HORDE_Note = "Encuentras a la Alta inquisidora Melenablanca y al Comandante Escarlata Mograine en la "..YELLOW.."Catedral [2]"..WHITE..", Herod en el "..YELLOW.."Arsenal [1]"..WHITE.." y al Maestro de Canes Loksey en la "..YELLOW.."Biblioteca [1]"..WHITE.."."
 Inst19Quest2_HORDE_Prequest = "Ninguno"
 Inst19Quest2_HORDE_Folgequest = "Ninguno"
 --
@@ -3709,7 +3710,7 @@ Inst19Quest3_HORDE_Level = "38"
 Inst19Quest3_HORDE_Attain = "28"
 Inst19Quest3_HORDE_Aim = "Recupera el Compendio de los Caídos del Monasterio que se encuentra en los Claros de Tirisfal y regresa ante Sabio Buscador de la Verdad, que está en Cima del Trueno."
 Inst19Quest3_HORDE_Location = "Sabio Buscador de la Verdad (Cima del Trueno; "..YELLOW.."34,47"..WHITE..")"
-Inst19Quest3_HORDE_Note = "Encuentras el libro en la Librería del Monasterio Escarlata."
+Inst19Quest3_HORDE_Note = "Encuentras el libro en la Biblioteca del Monasterio Escarlata."
 Inst19Quest3_HORDE_Prequest = "Ninguno"
 Inst19Quest3_HORDE_Folgequest = "Ninguno"
 --
@@ -3723,7 +3724,7 @@ Inst19Quest4_HORDE_Level = "36"
 Inst19Quest4_HORDE_Attain = "25"
 Inst19Quest4_HORDE_Aim = "Encuentra el libro Comienzos de la amenaza de los no-muertos y devuélveselo a Parqual Fintallas, que está en Entrañas."
 Inst19Quest4_HORDE_Location = "Parqual Fintallas (Entrañas - El Apothecarium; "..YELLOW.."57,65"..WHITE..")"
-Inst19Quest4_HORDE_Note = "La cadena de misiones empieza con Dorn Acechallanos (Las Mil Agujas; "..YELLOW.."53,41"..WHITE.."). Encuentras el libro en la Librería del Monasterio Escarlata."
+Inst19Quest4_HORDE_Note = "La cadena de misiones empieza con Dorn Acechallanos (Las Mil Agujas; "..YELLOW.."53,41"..WHITE.."). Encuentras el libro en la Biblioteca del Monasterio Escarlata."
 Inst19Quest4_HORDE_Prequest = "Prueba de fe - > Prueba de conocimiento" -- 1149 -> 1159
 Inst19Quest4_HORDE_Folgequest = "Prueba de conocimiento" -- 6628
 -- No Rewards for this quest
@@ -3743,7 +3744,7 @@ Inst19Quest5_HORDE_Folgequest = Inst19Quest3_Folgequest
 
 --------------- INST20 - SM: Armory (SM Arm) ---------------
 Inst20Story = Inst19Story
-Inst20Caption = "Monasterio Escarlata: Armería"
+Inst20Caption = "Monasterio Escarlata: Arsenal"
 Inst20QAA = "1 Misión"
 Inst20QAH = "2 Misiones"
 
@@ -4141,7 +4142,7 @@ Inst23Quest11_HORDE_Folgequest = Inst23Quest11_Folgequest
 
 
 --------------- INST24 - Shadowfang Keep (SFK) ---------------
-Inst24Story = "Durante la Tercera Guerra, los zahoríes del Kirin Tor lucharon contra los ejércitos no-muertos de la Plaga. Cuando los zahoríes de Dalaran morían en combate, se alzaban al poco tiempo, añadiendo su poder inicial a la creciente Plaga. Frustrado por su falta de progresos (y en contra de los consejos de sus compañeros), el archimago Arugal decidió invocar a entidades extradimensionales para reforzar las filas de Dalaran. Su invocación trajo a los voraces ferocanis al mundo de Azeroth. Los ferales lobizones no solo masacraron a la Plaga, sino que acabaron con los zahoríes rápidamente. Asediaron el castillo del noble Barón Filargenta. Situado sobre la diminuta aldea Piroleña, tardó poco en caer en las sombras y la ruina. Enloquecido por la culpabilidad, Arugal adoptó a los ferocanis como sus hijos y se retiró al ahora llamado \"Castillo de Colmillo Oscuro\" Se dice que todavía reside allí, protegido por su enorme mascota, Fenrus, y acosado por el fantasma vengativo del Barón Filargenta."
+Inst24Story = "Durante la Tercera Guerra, los zahoríes del Kirin Tor lucharon contra los ejércitos no-muertos de la Plaga. Cuando los zahoríes de Dalaran morían en combate, se alzaban al poco tiempo, añadiendo su poder inicial a la creciente Plaga. Frustrado por su falta de progresos (y en contra de los consejos de sus compañeros), el archimago Arugal decidió invocar a entidades extradimensionales para reforzar las filas de Dalaran. Su invocación trajo a los voraces ferocanis al mundo de Azeroth. Los ferales lobizones no solo masacraron a la Plaga, sino que acabaron con los zahoríes rápidamente. Asediaron el castillo del noble Barón Filargenta. Situado sobre la diminuta aldea Piroleña, tardó poco en caer en las sombras y la ruina. Enloquecido por la culpabilidad, Arugal adoptó a los ferocanis como sus hijos y se retiró al ahora llamado \"Castillo de Colmillo Oscuro\". Se dice que todavía reside allí, protegido por su enorme mascota, Fenrus, y acosado por el fantasma vengativo del Barón Filargenta."
 Inst24Caption = "Castillo de Colmillo Oscuro"
 Inst24QAA = "2 Misiones"
 Inst24QAH = "4 Misiones"
@@ -4165,7 +4166,7 @@ Inst24Quest2_Level = "25"
 Inst24Quest2_Attain = "20"
 Inst24Quest2_Aim = "Encuentra 3 trozos de Soran'ruk y 1 trozo de Soran'ruk grande y llévaselos a Doan Karhan en Los Baldíos."
 Inst24Quest2_Location = "Doan Karhan (Los Baldíos; "..YELLOW.."49,57"..WHITE..")"
-Inst24Quest2_Note = "Solamente para Brujos: Consigues los 3 Trozos de Soran'ruk de los Acólitos Crepusculares en "..YELLOW.."[Cavernas de Brazanegra]"..WHITE..". Consigues el Trozo de Soran'ruk grande en "..YELLOW.."[Castillo de Colmillo Oscuro]"..WHITE.." de los Almanegras Colmillo Oscuro"
+Inst24Quest2_Note = "Solamente para Brujos: Consigues los 3 Trozos de Soran'ruk de los Acólitos Crepusculares en "..YELLOW.."[Cavernas de Brazanegra]"..WHITE..". Consigues el Trozo de Soran'ruk grande en "..YELLOW.."[Castillo de Colmillo Oscuro]"..WHITE.." de los Almanegras Colmillo Oscuro."
 Inst24Quest2_Prequest = "Ninguno"
 Inst24Quest2_Folgequest = "Ninguno"
 --
@@ -4226,7 +4227,7 @@ Inst24Quest4name2_HORDE = Inst24Quest2name1
 
 
 --------------- INST25 - Stratholme (Strat) ---------------
-Inst25Story = "Antaño joya del norte de Lordaeron, la ciudad de Stratholme es donde el Príncipe Arthas se volvió contra su mentor, Uther el Iluminado, y masacró a cientos de sus propios súbditos, ya que se suponía que habían contraído la terrible peste de la no-muerte. La espiral descendente de Arthas y su rendición final ante el Rey Exánime tuvieron lugar al poco tiempo. La ciudad arrasada es ahora el hogar de la Plaga no-muerta, liderada por el poderoso exánime, Kel'thuzad. Un contingente de Cruzados Escarlatas, liderados por el Gran Cruzado Dathrohan también controlan una parte de la ciudad arrasada. Los dos bandos están enzarzados en un combate constante y violento. Aquellos aventureros lo bastante valientes (o insensatos) como para entrar en Stratholme se verán obligados a enfrentarse a ambas facciones en breve. Se dice que la ciudad está protegida por tres enormes atalayas, y por poderosos necrománticos, almas en pena y abominaciones. También hay informes sobre un maléfico Caballero de la Muerte que cabalga sobre una montura perversa repartiendo su ira indiscriminada por entre aquellos que se aventuren al reino de la Plaga."
+Inst25Story = "Antaño joya del norte de Lordaeron, la ciudad de Stratholme es donde el Príncipe Arthas se volvió contra su mentor, Uther el Iluminado, y masacró a cientos de sus propios súbditos, ya que se suponía que habían contraído la terrible peste de los no-muertos. La espiral descendente de Arthas y su rendición final ante el Rey Exánime tuvieron lugar al poco tiempo. La ciudad arrasada es ahora el hogar de la Plaga no-muerta, liderada por el poderoso exánime, Kel'thuzad. Un contingente de Cruzados Escarlatas, liderados por el Gran Cruzado Dathrohan también controlan una parte de la ciudad arrasada. Los dos bandos están enzarzados en un combate constante y violento. Aquellos aventureros lo bastante valientes (o insensatos) como para entrar en Stratholme se verán obligados a enfrentarse a ambas facciones en breve. Se dice que la ciudad está protegida por tres enormes atalayas, y por poderosos necrománticos, almas en pena y abominaciones. También hay informes sobre un maléfico Caballero de la Muerte que cabalga sobre una montura perversa repartiendo su ira indiscriminada por entre aquellos que se aventuren al reino de la Plaga."
 Inst25Caption = "Stratholme"
 Inst25QAA = "17 Misiones"
 Inst25QAH = "18 Misiones"
@@ -4733,7 +4734,7 @@ Inst26Quest2name6_HORDE = Inst26Quest2name6
 
 
 --------------- INST27 - The Stockade (Stocks) ---------------
-Inst27Story = "Las Mazmorras son un complejo penitenciario de alta seguridad ocultas bajo el distrito de Los Canales de la ciudad de Ventormenta. Presididas por el el alcaide Thelagua, Las Mazmorras son el hogar de bandidos mezquinos, insurgentes políticos, asesinos y una colección de los criminales más peligrosos de la tierra. Recientemente, una revuelta liderada por los prisioneros ha creado un estado de pandemonio en su interior; los guardias no han podido contenerlos y los convictos vagan libres. El alcaide ha logrado escapar de la zona de contención y en la actualidad está alistando a valientes ansiosos de emociones para aventurarse en la prisión y asesinar al líder del alzamiento: el astuto felón Bazil Thredd."
+Inst27Story = "Las Mazmorras son un complejo penitenciario de alta seguridad ocultas bajo el distrito de Los Canales de la ciudad de Ventormenta. Presididas por el alcaide Thelagua, Las Mazmorras son el hogar de bandidos mezquinos, insurgentes políticos, asesinos y una colección de los criminales más peligrosos de la tierra. Recientemente, una revuelta liderada por los prisioneros ha creado un estado de pandemonio en su interior; los guardias no han podido contenerlos y los convictos vagan libres. El alcaide ha logrado escapar de la zona de contención y en la actualidad está alistando a valientes ansiosos de emociones para aventurarse en la prisión y asesinar al líder del alzamiento: el astuto felón Bazil Thredd."
 Inst27Caption = "Las Mazmorras"
 Inst27QAA = "6 Misiones"
 Inst27QAH = "No Hay Misiones"
@@ -5239,7 +5240,7 @@ Inst28Quest16_HORDE_Folgequest = Inst28Quest16_Folgequest
 
 
 --------------- INST29 - The Temple of Ahn'Qiraj (AQ40) ---------------
-Inst29Story = "En el corazón de Ahn'Qiraj yace un antiguo complejo de templos. Construido antes de la historia conocida, es tanto un monumento a dioses innombrables como un campo de cría enorme para el ejército qiraji. Desde que la Guerra del Mar de Dunas acabó hace mil años, los Emperadores Gemelos del imperio qiraji han estado atrapados dentro de su templo, apenas contenidos tras la barrera mágica levantada por el dragón de bronce Anachronos y los elfos de la noche. Ahora que el Cetro del Mar de Dunas se ha vuelto a unir y el sello se ha roto, el camino hacia el santuario interior de Ahn'Qiraj está abierto. Más allá de la locura reptante de las colmenas, bajo el Templo de Ahn'Qiraj, legiones de qiraji se preparan para la invasión. Es necesario detenerlos a cualquier precio antes de que liberen a sus voraces ejércitos de insectoides sobre Kalimdor de nuevo ¡y comience una segunda Guerra del Mar de Dunas!"
+Inst29Story = "En el corazón de Ahn'Qiraj yace un antiguo complejo de templos. Construido antes de la historia conocida, es tanto un monumento a dioses innombrables como un campo de cría enorme para el ejército qiraji. Desde que la Guerra del Mar de Dunas acabó hace mil años, los Emperadores Gemelos del imperio qiraji han estado atrapados dentro de su templo, apenas contenidos tras la barrera mágica levantada por el dragón de bronce Anacronos y los elfos de la noche. Ahora que el Cetro del Mar de Dunas se ha vuelto a unir y el sello se ha roto, el camino hacia el santuario interior de Ahn'Qiraj está abierto. Más allá de la locura reptante de las colmenas, bajo el Templo de Ahn'Qiraj, legiones de qiraji se preparan para la invasión. Es necesario detenerlos a cualquier precio antes de que liberen a sus voraces ejércitos de insectoides sobre Kalimdor de nuevo ¡y comience una segunda Guerra del Mar de Dunas!"
 Inst29Caption = "Templo de Ahn'Qiraj"
 Inst29QAA = "2 Misiones"
 Inst29QAH = "2 Misiones"
@@ -5346,8 +5347,8 @@ Inst30Quest4_Note = "Despoja a Hidromántica Velratha en "..YELLOW.."[6]"..WHITE
 Inst30Quest4_Prequest = "La tarea de Tabetha" -- 2861
 Inst30Quest4_Folgequest = "Ninguno"
 --
-Inst30Quest3name1 = "Vara de tramoyista de hechizos"
-Inst30Quest3name2 = "Espaldares de pizarra"
+Inst30Quest4name1 = "Vara de tramoyista de hechizos"
+Inst30Quest4name2 = "Espaldares de pizarra"
 
 --Quest 5 Alliance
 Inst30Quest5 = "5. La profecía de Mosh'aru" -- 3527
@@ -5471,7 +5472,7 @@ Inst30Quest7name1_HORDE = Inst30Quest7name1
 
 
 --------------- INST31 - Zul'Gurub (ZG) ---------------
-Inst31Story = "Hace más de mil años, el poderoso Imperio Gurubashi se desquebrajó por una enorme guerra civil. Un influyente grupo de sacerdotes trol, conocidos como los Atal'ai, llamaron al avatar de un terrible y antiguo dios de la sangre llamado Hakkar el Cazador de Almas. Aunque al final los sacerdotes fueron derrotados y exiliados, el gran imperio trol se colapsó sobre si mismo. Los sacerdotes exiliados huyeron al norte, al Pantano de las Penas, donde erigieron un gran templo a Hakkar para preparar su llegada al mundo físico."
+Inst31Story = "Zul'Gurub era la capital de los trols de la jungla Gurubashi, una tribu que controlaba antaño las vastas junglas del sur. Aquí fue donde Jin'do el Aojador invocó a Hakkar el Cazador de Almas a Azeroth. Últimamente, estos esfuerzos se han retomado con ocasión de la alianza entre los trols Gurubashi y los Zandalar, que pretenden establecer un imperio trol unificado.\n\nLa influencia de esta civilización salvaje se puede ver en las altas plataformas y arcos cubiertos de enredaderas de Zul'Gurub. Sin embargo, podría afirmarse que no hace falta echar la vista muy atrás para conocer la parte más importante de la historia de la ciudad. Fue en Zul'Gurub donde Jin'do el Aojador esclavizó a varios sumos sacerdotes Gurubashi para que le ayudaran a invocar en Azeroth a su temido dios, Hakkar el Cazador de Almas. La presencia del Cazador de Almas supuso una grave amenaza para el mundo y, antes de que Hakkar y sus sacerdotes dominaran el continente, fueron derrotados gracias a la entrega y el esfuerzo de héroes que acudieron desde todos los rincones de Azeroth. Jin'do fue asesinado durante el conflicto; su espíritu, torturado por la deshonra que supuso su fracaso e incapaz de encontrar descanso, vagó por el mundo de los espíritus en busca de una forma de regresar... y de un nuevo plan. Jin'do regresó a Azeroth por la fuerza para reunir a sus nuevos y antiguos aliados: los veneradores de Hakkar, los Zanzil exiliados, e incluso a los antiguos enemigos de Hakkar, entre los cuales se encuentra la tribu Zandalar. Juntos, reconstruirán Zul'Gurub; no por la gloria de su dios derrotado, sino para hacerse con su brutal poder y asistir al triunfo de la raza trol sobre un mundo devastado."
 Inst31Caption = "Zul'Gurub"
 Inst31QAA = "4 Misiones"
 Inst31QAH = "4 Misiones"
@@ -5593,7 +5594,7 @@ Inst31Quest4name6_HORDE = Inst31Quest4name6
 
 
 --------------- INST32 - Gnomeregan (Gnomer) ---------------
-Inst32Story = "Situada en Dun Morogh, la maravilla tecnológica conocida como Gnomeregan ha sido la capital de los gnomos durante generaciones. Recientemente, una raza hostil de troggs mutantes infestaron varias regiones de Dun Morogh, incluyendo la gran ciudad gnómica. En un intento desesperado por destruir a los troggs invasores, el Manitas Mayor Mekkatorque ordenó la ventilación de emergencia de los tanques de desechos radioactivos de la ciudad. Algunos gnomos se refugiaron de los contaminantes del aire mientras esperaban a que los troggs murieran o huyeran. Por desgracia, a pesar de que los troggs se irradiaron por el asalto tóxico, su asalto continuó, imparable. Los gnomos que no murieron intoxicados se vieron obligados a huir, buscando refugio en la ciudad enana cercana de Ironforge. Allí, el Manitas Mayor Mekkatorque se dedica a alistar a almas valientes para que ayuden a su pueblo a reclamar su amada ciudad. Se dice que el antaño consejero de confianza de Mekkatorque, Mekigeniero Termochufe, traicionó a su pueblo permitiendo que la invasión tuviera lugar. Ahora, con su cordura destrozada, Termochufe vive en Gnomeregan y continúan con sus oscuros planes y actuando como el nuevo tecno-señor supremo de la ciudad."
+Inst32Story = "Situada en Dun Morogh, la maravilla tecnológica conocida como Gnomeregan ha sido la capital de los gnomos durante generaciones. Recientemente, una raza hostil de troggs mutantes infestaron varias regiones de Dun Morogh, incluyendo la gran ciudad gnómica. En un intento desesperado por destruir a los troggs invasores, el Manitas Mayor Mekkatorque ordenó la ventilación de emergencia de los tanques de desechos radioactivos de la ciudad. Algunos gnomos se refugiaron de los contaminantes del aire mientras esperaban a que los troggs murieran o huyeran. Por desgracia, a pesar de que los troggs se irradiaron por el asalto tóxico, su asalto continuó, imparable. Los gnomos que no murieron intoxicados se vieron obligados a huir, buscando refugio en la ciudad enana cercana de Forjaz. Allí, el Manitas Mayor Mekkatorque se dedica a alistar a almas valientes para que ayuden a su pueblo a reclamar su amada ciudad. Se dice que el antaño consejero de confianza de Mekkatorque, Mekigeniero Termochufe, traicionó a su pueblo permitiendo que la invasión tuviera lugar. Ahora, con su cordura destrozada, Termochufe vive en Gnomeregan y continúan con sus oscuros planes y actuando como el nuevo tecno-señor supremo de la ciudad."
 Inst32Caption = "Gnomeregan"
 Inst32QAA = "10 Misiones"
 Inst32QAH = "5 Misiones"
@@ -5856,7 +5857,7 @@ Inst34Quest2_Level = "60"
 Inst34Quest2_Attain = "60"
 Inst34Quest2_Aim = "Entrega el libro de contabilidad mágico de Azuregos a Narain Sabelotodo de Tanaris."
 Inst34Quest2_Location = "Espíritu de Azuregos (Azshara; "..YELLOW.."56,83"..WHITE..")"
-Inst34Quest2_Note = "Encuentras a Narain Sabelotodo en Tanaris en "..YELLOW.."65.17"..WHITE.."."
+Inst34Quest2_Note = "Encuentras a Narain Sabelotodo en Tanaris en "..YELLOW.."65,17"..WHITE.."."
 Inst34Quest2_Prequest = "Encomienda a los Vuelos" -- 8555
 Inst34Quest2_Folgequest = "La traducción del libro de contabilidad" -- 8576
 -- No Rewards for this quest

@@ -64,7 +64,7 @@ ATLAS_OPTIONS_SHOWBUT = "Mostrar botón en el minimapa";
 ATLAS_OPTIONS_AUTOSEL = "Auto-Seleccionar mazmorra";
 ATLAS_OPTIONS_BUTPOS = "Posición del icono";
 ATLAS_OPTIONS_TRANS = "Transparencia";
-ATLAS_OPTIONS_DONE = "Hecho";
+ATLAS_OPTIONS_DONE = "Aceptar";
 ATLAS_OPTIONS_REPMAP = "Reemplazar mapa del mundo";
 ATLAS_OPTIONS_RClic = "Botón derecho para mapa del mundo";
 ATLAS_OPTIONS_SHOWMAPNAME = "Mostrar nombre del mapa";
@@ -215,10 +215,10 @@ AL:RegisterTranslations("esES", function() return {
 	["Tier 3 Sets"] = "Equipo Tier 3";
 	
 	--Instance names and acronyms
-	["Armory"] = "Armería"; 
+	["Armory"] = "Arsenal"; 
 	["Cathedral"] = "Catedral"; 
 	["Graveyard"] = "Cementerio"; 
-	["Library"] = "Librería";	
+	["Library"] = "Biblioteca";	
 	["Sunken Temple"] = "Templo Sumergido";
 		
 
@@ -458,7 +458,7 @@ AL:RegisterTranslations("esES", function() return {
 	["Key to the City"] = "Llave de la ciudad";
 	["Various Postbox Keys"] = "Varias llaves de los buzones";
 	["Living Side"] = "Lado vivo";
-	["Undead Side"] = "Lado no muerto";
+	["Undead Side"] = "Lado no-muerto";
 	["Stratholme Courier"] = "Mensajero de Stratholme";
 	["Fras Siabi"] = "Fras Siabi";
 	["Atiesh"] = "Atiesh";
